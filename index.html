@@ -8,7 +8,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
 </head>
 <body>
-    <span class="outer"><span class="message"><span>Nothing's here.</span> <span>For now.</span> <span>Stay tuned.</span></span></span>
+    <span class="outer"><span class="message"><span>hckr.pl</span> <span>kinda draft version</span> <span>hckr.pl</span></span></span>
     <script>
         var texts = $('.message span').map(function() { return $(this).text().trim(); }).get();
         $('.message').typed({
@@ -18,5 +18,10 @@
             typeSpeed: 0
         });
     </script>
+    <br>
+    You might want to see my <a href="https://github.com/hckr">repo here</a> or jump to some of my works:
+    {% for repository in site.github.public_repositories %}
+      * [{{ repository.name }}]({{ repository.html_url }})
+    {% endfor %}
 </body>
 </html>
