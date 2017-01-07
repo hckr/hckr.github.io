@@ -1,4 +1,4 @@
-# Exclude these files from your production _site
+gems: ['jekyll-github-metadata']
 exclude:
   - Gemfile
   - Gemfile.lock

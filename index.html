@@ -1,3 +1,6 @@
+---
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
 </head>
 <body>
-    <span class="outer"><span class="message"><span>hckr.pl</span> <span>kinda draft version</span> <span>hckr.pl</span></span></span>
+    <h1><span class="outer"><span class="message"><span>hckr.pl</span> <span>kinda draft version</span> <span>hckr.pl</span></span></span></h1>
     <script>
         var texts = $('.message span').map(function() { return $(this).text().trim(); }).get();
         $('.message').typed({
@@ -19,9 +22,14 @@
         });
     </script>
     <br>
-    You might want to see my <a href="https://github.com/hckr">repo here</a> or jump to some of my works:
+    You might want to check out <a href="https://github.com/hckr">my GitHub profile</a> or jump directly to some of my repos:
+    <ul>
     {% for repository in site.github.public_repositories %}
-      * [{{ repository.name }}]({{ repository.html_url }})
+        <li>
+            <a href="{{ repository.html_url }}">{{ repository.name }}</a>
+            <!-- {% if repository.homepage %}(<a href="{{ repository.homepage }}">live demo</a>){% endif %} -->
+        </li>
     {% endfor %}
+    </ul>
 </body>
 </html>
