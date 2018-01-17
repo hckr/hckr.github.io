@@ -1,7 +1,0 @@
-gems: ['jekyll-github-metadata']
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
-  - CNAME

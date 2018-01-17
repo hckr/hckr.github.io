@@ -1,0 +1,12 @@
+{
+  "name": "hckr.github.io",
+  "version": "1.0.0",
+  "description": "My user GitHub page",
+  "author": "hckr",
+  "dependencies": {
+    "prismjs": "^1.9.0"
+  },
+  "scripts": {
+    "gen": "node generate-index.js"
+  }
+}
