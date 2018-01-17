@@ -20,7 +20,7 @@
             "website": "https://hckr.pl/endless-horse-run/"
         },
         "GitHub News Filter": {
-            "description": "A game in which a horse runs endlessly",
+            "description": "Userscript to filter GitHub news feed using case-insensitive regular expression",
             "code repository": "https://github.com/hckr/github-news-filter"
         },
         "Facebook Post Screenshot": {
