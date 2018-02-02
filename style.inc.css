@@ -1,0 +1,30 @@
+html {
+	background: #25262b;
+}
+
+pre {
+	color: #ccc;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	text-align: left;
+	white-space: pre;
+	line-height: 1.5;
+	padding: 1em;
+	margin: .5em 0;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+.token.string {
+	color: #8cc4f9;
+}
+
+.token.url {
+	color: #f98ccf;
+}
