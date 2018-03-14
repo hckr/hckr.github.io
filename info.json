@@ -43,6 +43,10 @@
             "code repository": "https://github.com/hckr/k-means-visualization",
             "website": "https://hckr.pl/k-means-visualization/"
         },
+        "sig_proc": {
+            "description": "Simple Python library and scripts created to generate PDF reports for signal processing classes",
+            "code repository": "https://github.com/hckr/sig_proc"
+        },
         "HTML5 video matrix code effect": {
             "description": "An attempt to create a \"matrix code\"-like effect on a(ny) video",
             "code repository": "https://github.com/hckr/html5-video-matrix-code-effect",
