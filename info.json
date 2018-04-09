@@ -18,7 +18,8 @@
         "Endless Horse Run": {
             "description": "A game in which a horse runs endlessly",
             "code repository": "https://github.com/hckr/endless-horse-run",
-            "website": "https://hckr.pl/endless-horse-run/"
+            "website": "https://hckr.pl/endless-horse-run/",
+            "android port": "https://play.google.com/store/apps/details?id=pl.hckr.endlesshorserun"
         },
         "GitHub News Filter": {
             "description": "Userscript to filter GitHub news feed using case-insensitive regular expression",
