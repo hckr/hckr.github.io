@@ -1,13 +1,14 @@
 let fs = require('fs'),
-    prismjs = require('prismjs');
+    prismjs = require('prismjs'),
+    Hjson = require('hjson');
 
 let info = fs.readFileSync('info.json', 'utf8'),
     infoHtml = prismjs.highlight(info, prismjs.languages.javascript),
     css = fs.readFileSync('style.inc.css', 'utf8');
 
-JSON.parse(info); // validation
+Hjson.parse(info.replace(/,.*\/\/.*/g, '')); // validation
 
-infoHtml = infoHtml.replace(/https?:\/\/[^\s/$.?#].[^\s"]*/ig, match => `<a class="token url" href="${match}">${match}</a>`);
+infoHtml = infoHtml.replace(/(https?:\/\/|\.\/)[^\s/$.?#].[^\s"]*/ig, match => `<a class="token url" href="${match}">${match}</a>`);
 
 html = `<!DOCTYPE html>
 <html>
