@@ -6,7 +6,7 @@ pre {
 	color: #ccc;
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	text-align: left;
-	white-space: pre;
+	white-space: pre-wrap;
 	line-height: 1.5;
 	padding: 1em;
 	margin: .5em 0;
@@ -27,4 +27,15 @@ pre {
 
 .token.url {
 	color: #f98ccf;
+	white-space: nowrap;
+}
+
+.technology {
+	cursor: pointer;
+	border-radius: 5px;
+	padding: 3px 5px;
+}
+
+.highlight {
+	background: hsl(316, 100%, 30%);
 }
