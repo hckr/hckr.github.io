@@ -22,7 +22,7 @@
             "code repository": "https://github.com/hckr/endless-horse-run",
             "website": "https://hckr.pl/endless-horse-run/",
             "android port": "https://play.google.com/store/apps/details?id=pl.hckr.endlesshorserun",
-            "technologies": [ "JavaScript", "PhoneGap" ]
+            "technologies": [ "JavaScript", "Cordova" ]
         },
         "GitHub News Filter": {
             "description": "Userscript to filter GitHub news feed using case-insensitive regular expression",
