@@ -11,6 +11,12 @@
     },
 
     "selected projects": {
+        "Throw an Arrow": {
+            "description": "Throw an Arrow is a game made for Gynvael's Summer GameDev Challenge 2018",
+            "code repository": "https://github.com/hckr/throw-an-arrow",
+            "website": "https://hckr.pl/throw-an-arrow",
+            "technologies": [ "JavaScript" ]
+        },
         "Space Logic Adventure": {
             "description": "Space Logic Adventure is an arcade game (with a pinch of logic I guess) made for Gynvael's Summer GameDev Challenge 2017",
             "code repository": "https://github.com/hckr/space-logic-adventure",
