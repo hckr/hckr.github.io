@@ -2,7 +2,7 @@ let fs = require('fs'),
     prismjs = require('prismjs'),
     Hjson = require('hjson');
 
-let info = fs.readFileSync('info.json', 'utf8');
+let info = fs.readFileSync('info.hjson', 'utf8');
 
 let data = Hjson.parse(info.replace(/,.*\/\/.*/g, ''));
 

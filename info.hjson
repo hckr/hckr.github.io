@@ -33,6 +33,7 @@
         "GitHub News Filter": {
             "description": "Userscript to filter GitHub news feed using case-insensitive regular expression",
             "code repository": "https://github.com/hckr/github-news-filter",
+            "website": "https://hckr.pl/github-news-filter/",
             "technologies": [ "JavaScript", "userscript" ]
         },
         "Facebook Post Screenshot": {
