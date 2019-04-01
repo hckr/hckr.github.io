@@ -38,4 +38,5 @@ pre {
 
 .highlight {
 	background: hsl(316, 100%, 30%);
+	color: white !important;
 }

@@ -1,8 +1,8 @@
 {
     "name": "Jakub Młokosiewicz",
     "website": "https://hckr.pl",
-    "description": "Aspiring hacker",
-    "cv": "./Jakub_Młokosiewcz_CV_en.pdf", // last update: 28th November 2018
+    "description": "I like to tinker with software",
+    "cv": "./Jakub_Młokosiewcz_CV_en.pdf", // last update: 1th April 2019
     "social profiles": {
         "GitHub": "https://github.com/hckr",
         "LinkedIn": "https://www.linkedin.com/in/jmlokosiewicz/",
@@ -23,6 +23,13 @@
             "website": "https://hckr.pl/space-logic-adventure",
             "technologies": [ "C++", "SFML" ]
         },
+        "Facebook Post Screenshot": {
+            "description": "Firefox Web Extension to save Facebook posts as images",
+            "code repository": "https://github.com/hckr/fb-post-screenshot",
+            "website": "https://hckr.pl/fb-post-screenshot/",
+            "Firefox Add-ons website": "https://addons.mozilla.org/en-US/firefox/addon/facebook-post-screenshot/",
+            "technologies": [ "JavaScript", "WebExtensions" ]
+        },
         "Endless Horse Run": {
             "description": "A game in which a horse runs endlessly",
             "code repository": "https://github.com/hckr/endless-horse-run",
@@ -35,12 +42,6 @@
             "code repository": "https://github.com/hckr/github-news-filter",
             "website": "https://hckr.pl/github-news-filter/",
             "technologies": [ "JavaScript", "userscript" ]
-        },
-        "Facebook Post Screenshot": {
-            "description": "Firefox Web Extension to save Facebook posts as images",
-            "code repository": "https://github.com/hckr/fb-post-screenshot",
-            "website": "https://addons.mozilla.org/en-US/firefox/addon/facebook-post-screenshot/",
-            "technologies": [ "JavaScript", "WebExtensions" ]
         },
         "My Arduino projects": {
             "description": "Small projects using a well-known prototyping board",
