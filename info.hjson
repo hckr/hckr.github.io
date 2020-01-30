@@ -30,6 +30,16 @@
             "Firefox Add-ons website": "https://addons.mozilla.org/en-US/firefox/addon/facebook-post-screenshot/",
             "technologies": [ "JavaScript", "WebExtensions" ]
         },
+        "Padding Oracle Attack": {
+            "description": ".NET Core C# implementation of a padding oracle attack against AES CBC (PKCS7, ANSI X.923) along with a report with Q&A",
+            "code repository": "https://github.com/hckr/padding-oracle-attack",
+            "technologies": [ "C#", ".NET Core", "cryptography" ]
+        },
+        "tbb_mandelbrot": {
+            "description": "Generating and visualizing Mandelbrot set/fractal using Threading Building Blocks (TBB) and png++",
+            "code repository": "https://github.com/hckr/tbb_mandelbrot",
+            "technologies": [ "C++", "TBB", "png++" ]
+        },
         "Endless Horse Run": {
             "description": "A game in which a horse runs endlessly",
             "code repository": "https://github.com/hckr/endless-horse-run",
@@ -63,7 +73,7 @@
         "Engineering thesis": {
             "description": "My engineering thesis on reinforcement learning applied to Connect 4",
             "code repository": "https://github.com/hckr/engineering-thesis",
-            "technologies": [ "Python" ]
+            "technologies": [ "Python", "neural networks", "reinforcement learning" ]
         },
         "Employee management (in Polish)": {
             "description": "A CRUD application for employee data management with different access levels",
