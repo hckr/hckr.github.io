@@ -2,7 +2,7 @@
     "name": "Jakub Młokosiewicz",
     "website": "https://hckr.pl",
     "description": "I like to tinker with software",
-    "cv": "./Jakub_Młokosiewcz_CV_en.pdf", // last update: 1th April 2019
+    "cv": "../Jakub_Młokosiewcz_CV_en.pdf", // last update: 1th April 2019
     "social profiles": {
         "GitHub": "https://github.com/hckr",
         "LinkedIn": "https://www.linkedin.com/in/jmlokosiewicz/",

@@ -25,7 +25,7 @@ let infoHtml = prismjs.highlight(info, prismjs.languages.javascript),
     css = fs.readFileSync('style.inc.css', 'utf8'),
     js = fs.readFileSync('script.inc.js', 'utf8');
 
-infoHtml = infoHtml.replace(/(https?:\/\/|\.\/)[^\s/$.?#].[^\s"]*/ig, match => `<a class="token url" href="${match}">${match}</a>`);
+infoHtml = infoHtml.replace(/(https?:\/\/|\.\.?\/)[^\s/$.?#].[^\s"]*/ig, match => `<a class="token url" href="${match}">${match}</a>`);
 
 for (let tech of technologies) {
     let escaped = tech.replace(/\+/g, '\\+');
@@ -34,7 +34,7 @@ for (let tech of technologies) {
         `<span class="token string technology">"${tech}"</span>`);
 }
 
-html = `<!DOCTYPE html>
+const html = `<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">

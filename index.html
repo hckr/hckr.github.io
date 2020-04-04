@@ -1,190 +1,299 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Jakub Młokosiewicz – hckr.pl</title>
-<style>
-html {
-	background: #25262b;
-}
-
-pre {
-	color: #ccc;
-	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-	text-align: left;
-	white-space: pre-wrap;
-	line-height: 1.5;
-	padding: 1em;
-	margin: .5em 0;
-
-	-moz-tab-size: 4;
-	-o-tab-size: 4;
-	tab-size: 4;
-
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
-}
-
-.token.string {
-	color: #8cc4f9;
-}
-
-.token.url {
-	color: #f98ccf;
-	white-space: nowrap;
-}
-
-.technology {
-	cursor: pointer;
-	border-radius: 5px;
-	padding: 3px 5px;
-}
-
-.highlight {
-	background: hsl(316, 100%, 30%);
-	color: white !important;
-}
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jakub Młokosiewicz – hckr.pl</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Major+Mono+Display&display=swap">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<pre><span class="token punctuation">{</span>
-    <span class="token string">"name"</span><span class="token punctuation">:</span> <span class="token string">"Jakub Młokosiewicz"</span><span class="token punctuation">,</span>
-    <span class="token string">"website"</span><span class="token punctuation">:</span> <span class="token string">"<a class="token url" href="https://hckr.pl">https://hckr.pl</a>"</span><span class="token punctuation">,</span>
-    <span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">"I like to tinker with software"</span><span class="token punctuation">,</span>
-    <span class="token string">"cv"</span><span class="token punctuation">:</span> <span class="token string">"<a class="token url" href="./Jakub_Młokosiewcz_CV_en.pdf">./Jakub_Młokosiewcz_CV_en.pdf</a>"</span><span class="token punctuation">,</span> <span class="token comment">// last update: 1th April 2019</span>
-    <span class="token string">"social profiles"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
-        <span class="token string">"GitHub"</span><span class="token punctuation">:</span> <span class="token string">"<a class="token url" href="https://github.com/hckr">https://github.com/hckr</a>"</span><span class="token punctuation">,</span>
-        <span class="token string">"LinkedIn"</span><span class="token punctuation">:</span> <span class="token string">"<a class="token url" href="https://www.linkedin.com/in/jmlokosiewicz/">https://www.linkedin.com/in/jmlokosiewicz/</a>"</span><span class="token punctuation">,</span>
-        <span class="token string">"StackOverflow"</span><span class="token punctuation">:</span> <span class="token string">"<a class="token url" href="https://stackoverflow.com/users/5114473/luke">https://stackoverflow.com/users/5114473/luke</a>"</span><span class="token punctuation">,</span>
-        <span class="token string">"YouTube"</span><span class="token punctuation">:</span> <span class="token string">"<a class="token url" href="https://www.youtube.com/channel/UCD2K9r5sqHOXO9H5zdd86Nw">https://www.youtube.com/channel/UCD2K9r5sqHOXO9H5zdd86Nw</a>"</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    <span class="token string">"technologies used"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token comment">// in the projects below, not all that I know ;)</span>
-        <span class="token string technology">"JavaScript"</span><span class="token punctuation">,</span> <span class="token string technology">"HTML"</span><span class="token punctuation">,</span> <span class="token string technology">"CSS"</span><span class="token punctuation">,</span> <span class="token string technology">"C++"</span><span class="token punctuation">,</span> <span class="token string technology">"Python"</span><span class="token punctuation">,</span> <span class="token string technology">"matplotlib"</span><span class="token punctuation">,</span> <span class="token string technology">"cryptography"</span><span class="token punctuation">,</span> <span class="token string technology">"TBB"</span><span class="token punctuation">,</span> <span class="token string technology">"png++"</span><span class="token punctuation">,</span> <span class="token string technology">"Cordova"</span><span class="token punctuation">,</span> <span class="token string technology">"userscript"</span><span class="token punctuation">,</span> <span class="token string technology">"Winsock"</span><span class="token punctuation">,</span> <span class="token string technology">"C"</span><span class="token punctuation">,</span> <span class="token string technology">"SFML"</span><span class="token punctuation">,</span> <span class="token string technology">"WebExtensions"</span><span class="token punctuation">,</span> <span class="token string technology">"C#"</span><span class="token punctuation">,</span> <span class="token string technology">"neural networks"</span><span class="token punctuation">,</span> <span class="token string technology">"reinforcement learning"</span><span class="token punctuation">,</span> <span class="token string technology">"PHP"</span><span class="token punctuation">,</span> <span class="token string technology">".NET Core"</span><span class="token punctuation">,</span> <span class="token string technology">"wxPython"</span><span class="token punctuation">,</span> <span class="token string technology">"Arduino"</span>
-    <span class="token punctuation">]</span><span class="token punctuation">,</span>
-    <span class="token string">"selected projects"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
-        <span class="token string">"Throw an Arrow"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
-            <span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">"Throw an Arrow is a game made for Gynvael's Summer GameDev Challenge 2018"</span><span class="token punctuation">,</span>
-            <span class="token string">"code repository"</span><span class="token punctuation">:</span> <span class="token string">"<a class="token url" href="https://github.com/hckr/throw-an-arrow">https://github.com/hckr/throw-an-arrow</a>"</span><span class="token punctuation">,</span>
-            <span class="token string">"website"</span><span class="token punctuation">:</span> <span class="token string">"<a class="token url" href="https://hckr.pl/throw-an-arrow">https://hckr.pl/throw-an-arrow</a>"</span><span class="token punctuation">,</span>
-            <span class="token string">"technologies"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token string technology">"JavaScript"</span> <span class="token punctuation">]</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
-        <span class="token string">"Space Logic Adventure"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
-            <span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">"Space Logic Adventure is an arcade game (with a pinch of logic I guess) made for Gynvael's Summer GameDev Challenge 2017"</span><span class="token punctuation">,</span>
-            <span class="token string">"code repository"</span><span class="token punctuation">:</span> <span class="token string">"<a class="token url" href="https://github.com/hckr/space-logic-adventure">https://github.com/hckr/space-logic-adventure</a>"</span><span class="token punctuation">,</span>
-            <span class="token string">"website"</span><span class="token punctuation">:</span> <span class="token string">"<a class="token url" href="https://hckr.pl/space-logic-adventure">https://hckr.pl/space-logic-adventure</a>"</span><span class="token punctuation">,</span>
-            <span class="token string">"technologies"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token string technology">"C++"</span><span class="token punctuation">,</span> <span class="token string technology">"SFML"</span> <span class="token punctuation">]</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
-        <span class="token string">"Facebook Post Screenshot"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
-            <span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">"Firefox Web Extension to save Facebook posts as images"</span><span class="token punctuation">,</span>
-            <span class="token string">"code repository"</span><span class="token punctuation">:</span> <span class="token string">"<a class="token url" href="https://github.com/hckr/fb-post-screenshot">https://github.com/hckr/fb-post-screenshot</a>"</span><span class="token punctuation">,</span>
-            <span class="token string">"website"</span><span class="token punctuation">:</span> <span class="token string">"<a class="token url" href="https://hckr.pl/fb-post-screenshot/">https://hckr.pl/fb-post-screenshot/</a>"</span><span class="token punctuation">,</span>
-            <span class="token string">"Firefox Add-ons website"</span><span class="token punctuation">:</span> <span class="token string">"<a class="token url" href="https://addons.mozilla.org/en-US/firefox/addon/facebook-post-screenshot/">https://addons.mozilla.org/en-US/firefox/addon/facebook-post-screenshot/</a>"</span><span class="token punctuation">,</span>
-            <span class="token string">"technologies"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token string technology">"JavaScript"</span><span class="token punctuation">,</span> <span class="token string technology">"WebExtensions"</span> <span class="token punctuation">]</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
-        <span class="token string">"Padding Oracle Attack"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
-            <span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">".NET Core C# implementation of a padding oracle attack against AES CBC (PKCS7, ANSI X.923) along with a report with Q&amp;A"</span><span class="token punctuation">,</span>
-            <span class="token string">"code repository"</span><span class="token punctuation">:</span> <span class="token string">"<a class="token url" href="https://github.com/hckr/padding-oracle-attack">https://github.com/hckr/padding-oracle-attack</a>"</span><span class="token punctuation">,</span>
-            <span class="token string">"technologies"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token string technology">"C#"</span><span class="token punctuation">,</span> <span class="token string technology">".NET Core"</span><span class="token punctuation">,</span> <span class="token string technology">"cryptography"</span> <span class="token punctuation">]</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
-        <span class="token string">"tbb_mandelbrot"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
-            <span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">"Generating and visualizing Mandelbrot set/fractal using Threading Building Blocks (TBB) and png++"</span><span class="token punctuation">,</span>
-            <span class="token string">"code repository"</span><span class="token punctuation">:</span> <span class="token string">"<a class="token url" href="https://github.com/hckr/tbb_mandelbrot">https://github.com/hckr/tbb_mandelbrot</a>"</span><span class="token punctuation">,</span>
-            <span class="token string">"technologies"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token string technology">"C++"</span><span class="token punctuation">,</span> <span class="token string technology">"TBB"</span><span class="token punctuation">,</span> <span class="token string technology">"png++"</span> <span class="token punctuation">]</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
-        <span class="token string">"Endless Horse Run"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
-            <span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">"A game in which a horse runs endlessly"</span><span class="token punctuation">,</span>
-            <span class="token string">"code repository"</span><span class="token punctuation">:</span> <span class="token string">"<a class="token url" href="https://github.com/hckr/endless-horse-run">https://github.com/hckr/endless-horse-run</a>"</span><span class="token punctuation">,</span>
-            <span class="token string">"website"</span><span class="token punctuation">:</span> <span class="token string">"<a class="token url" href="https://hckr.pl/endless-horse-run/">https://hckr.pl/endless-horse-run/</a>"</span><span class="token punctuation">,</span>
-            <span class="token string">"android port"</span><span class="token punctuation">:</span> <span class="token string">"<a class="token url" href="https://play.google.com/store/apps/details?id=pl.hckr.endlesshorserun">https://play.google.com/store/apps/details?id=pl.hckr.endlesshorserun</a>"</span><span class="token punctuation">,</span>
-            <span class="token string">"technologies"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token string technology">"JavaScript"</span><span class="token punctuation">,</span> <span class="token string technology">"Cordova"</span> <span class="token punctuation">]</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
-        <span class="token string">"GitHub News Filter"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
-            <span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">"Userscript to filter GitHub news feed using case-insensitive regular expression"</span><span class="token punctuation">,</span>
-            <span class="token string">"code repository"</span><span class="token punctuation">:</span> <span class="token string">"<a class="token url" href="https://github.com/hckr/github-news-filter">https://github.com/hckr/github-news-filter</a>"</span><span class="token punctuation">,</span>
-            <span class="token string">"website"</span><span class="token punctuation">:</span> <span class="token string">"<a class="token url" href="https://hckr.pl/github-news-filter/">https://hckr.pl/github-news-filter/</a>"</span><span class="token punctuation">,</span>
-            <span class="token string">"technologies"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token string technology">"JavaScript"</span><span class="token punctuation">,</span> <span class="token string technology">"userscript"</span> <span class="token punctuation">]</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
-        <span class="token string">"My Arduino projects"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
-            <span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">"Small projects using a well-known prototyping board"</span><span class="token punctuation">,</span>
-            <span class="token string">"code repository"</span><span class="token punctuation">:</span> <span class="token string">"<a class="token url" href="https://github.com/hckr/arduino">https://github.com/hckr/arduino</a>"</span><span class="token punctuation">,</span>
-            <span class="token string">"technologies"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token string technology">"Arduino"</span><span class="token punctuation">,</span> <span class="token string technology">"C"</span> <span class="token punctuation">]</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
-        <span class="token string">"Logic-algebraic yachting"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
-            <span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">"A project for Decision Support Systems classes"</span><span class="token punctuation">,</span>
-            <span class="token string">"code repository"</span><span class="token punctuation">:</span> <span class="token string">"<a class="token url" href="https://github.com/hckr/logic-algebraic-yachting">https://github.com/hckr/logic-algebraic-yachting</a>"</span><span class="token punctuation">,</span>
-            <span class="token string">"website"</span><span class="token punctuation">:</span> <span class="token string">"<a class="token url" href="https://hckr.pl/logic-algebraic-yachting/en.html">https://hckr.pl/logic-algebraic-yachting/en.html</a>"</span><span class="token punctuation">,</span>
-            <span class="token string">"technologies"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token string technology">"JavaScript"</span><span class="token punctuation">,</span> <span class="token string technology">"HTML"</span><span class="token punctuation">,</span> <span class="token string technology">"CSS"</span> <span class="token punctuation">]</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
-        <span class="token string">"K-means visualization"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
-            <span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">"Two-dimensional visualization of k-means clustering algorithm"</span><span class="token punctuation">,</span>
-            <span class="token string">"code repository"</span><span class="token punctuation">:</span> <span class="token string">"<a class="token url" href="https://github.com/hckr/k-means-visualization">https://github.com/hckr/k-means-visualization</a>"</span><span class="token punctuation">,</span>
-            <span class="token string">"website"</span><span class="token punctuation">:</span> <span class="token string">"<a class="token url" href="https://hckr.pl/k-means-visualization/">https://hckr.pl/k-means-visualization/</a>"</span><span class="token punctuation">,</span>
-            <span class="token string">"technologies"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token string technology">"JavaScript"</span><span class="token punctuation">,</span> <span class="token string technology">"HTML"</span><span class="token punctuation">,</span> <span class="token string technology">"CSS"</span> <span class="token punctuation">]</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
-        <span class="token string">"Engineering thesis"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
-            <span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">"My engineering thesis on reinforcement learning applied to Connect 4"</span><span class="token punctuation">,</span>
-            <span class="token string">"code repository"</span><span class="token punctuation">:</span> <span class="token string">"<a class="token url" href="https://github.com/hckr/engineering-thesis">https://github.com/hckr/engineering-thesis</a>"</span><span class="token punctuation">,</span>
-            <span class="token string">"technologies"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token string technology">"Python"</span><span class="token punctuation">,</span> <span class="token string technology">"neural networks"</span><span class="token punctuation">,</span> <span class="token string technology">"reinforcement learning"</span> <span class="token punctuation">]</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
-        <span class="token string">"Employee management (in Polish)"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
-            <span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">"A CRUD application for employee data management with different access levels"</span><span class="token punctuation">,</span>
-            <span class="token string">"code repository"</span><span class="token punctuation">:</span> <span class="token string">"<a class="token url" href="https://github.com/hckr/si_lab">https://github.com/hckr/si_lab</a>"</span><span class="token punctuation">,</span>
-            <span class="token string">"website"</span><span class="token punctuation">:</span> <span class="token string">"<a class="token url" href="http://si.luke.co.pl/">http://si.luke.co.pl/</a>"</span><span class="token punctuation">,</span>
-            <span class="token string">"technologies"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token string technology">"PHP"</span><span class="token punctuation">,</span> <span class="token string technology">"HTML"</span><span class="token punctuation">,</span> <span class="token string technology">"CSS"</span> <span class="token punctuation">]</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
-        <span class="token string">"sig_proc"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
-            <span class="token string">"description"</span><span class="token punctuation">:</span><span class="token string">"Library and scripts created to generate PDF reports for signal processing classes"</span><span class="token punctuation">,</span>
-            <span class="token string">"code repository"</span><span class="token punctuation">:</span> <span class="token string">"<a class="token url" href="https://github.com/hckr/sig_proc">https://github.com/hckr/sig_proc</a>"</span><span class="token punctuation">,</span>
-            <span class="token string">"technologies"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token string technology">"Python"</span><span class="token punctuation">,</span> <span class="token string technology">"matplotlib"</span> <span class="token punctuation">]</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
-        <span class="token string">"Fuzzer (in Polish)"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
-            <span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">"GUI script for fuzzy logic classes"</span><span class="token punctuation">,</span>
-            <span class="token string">"code repository"</span><span class="token punctuation">:</span> <span class="token string">"<a class="token url" href="https://github.com/hckr/fuzzer">https://github.com/hckr/fuzzer</a>"</span><span class="token punctuation">,</span>
-            <span class="token string">"technologies"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token string technology">"Python"</span><span class="token punctuation">,</span> <span class="token string technology">"wxPython"</span><span class="token punctuation">,</span> <span class="token string technology">"matplotlib"</span> <span class="token punctuation">]</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
-        <span class="token string">"HTML5 video matrix code effect"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
-            <span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">"An attempt to create a \"matrix code\"-like effect on a(ny) video"</span><span class="token punctuation">,</span>
-            <span class="token string">"code repository"</span><span class="token punctuation">:</span> <span class="token string">"<a class="token url" href="https://github.com/hckr/html5-video-matrix-code-effect">https://github.com/hckr/html5-video-matrix-code-effect</a>"</span><span class="token punctuation">,</span>
-            <span class="token string">"website"</span><span class="token punctuation">:</span> <span class="token string">"<a class="token url" href="https://hckr.pl/html5-video-matrix-code-effect/">https://hckr.pl/html5-video-matrix-code-effect/</a>"</span><span class="token punctuation">,</span>
-            <span class="token string">"technologies"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token string technology">"JavaScript"</span><span class="token punctuation">,</span> <span class="token string technology">"HTML"</span><span class="token punctuation">,</span> <span class="token string technology">"CSS"</span> <span class="token punctuation">]</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
-        <span class="token string">"SimpleHTTP"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
-            <span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">"A simple HTTP server written using C++ and Winsock"</span><span class="token punctuation">,</span>
-            <span class="token string">"code repository"</span><span class="token punctuation">:</span> <span class="token string">"<a class="token url" href="https://github.com/hckr/SimpleHTTP">https://github.com/hckr/SimpleHTTP</a>"</span><span class="token punctuation">,</span>
-            <span class="token string">"technologies"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token string technology">"C++"</span><span class="token punctuation">,</span> <span class="token string technology">"Winsock"</span> <span class="token punctuation">]</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
-        <span class="token string">"ThreadPool"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
-            <span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">"A thread pool implementation in C++11"</span><span class="token punctuation">,</span>
-            <span class="token string">"code repository"</span><span class="token punctuation">:</span> <span class="token string">"<a class="token url" href="https://github.com/hckr/threadpool">https://github.com/hckr/threadpool</a>"</span><span class="token punctuation">,</span>
-            <span class="token string">"technologies"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token string technology">"C++"</span> <span class="token punctuation">]</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
-        <span class="token string">"Web GUI"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
-            <span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">"A very old project of mine. An attempt to create a web interface mimicking windows desktop"</span><span class="token punctuation">,</span>
-            <span class="token string">"code repository"</span><span class="token punctuation">:</span> <span class="token string">"<a class="token url" href="https://github.com/hckr/web-gui">https://github.com/hckr/web-gui</a>"</span><span class="token punctuation">,</span>
-            <span class="token string">"website"</span><span class="token punctuation">:</span> <span class="token string">"<a class="token url" href="http://gui-demo.luke.co.pl/">http://gui-demo.luke.co.pl/</a>"</span><span class="token punctuation">,</span>
-            <span class="token string">"technologies"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token string technology">"JavaScript"</span><span class="token punctuation">,</span> <span class="token string technology">"HTML"</span><span class="token punctuation">,</span> <span class="token string technology">"CSS"</span> <span class="token punctuation">]</span>
-        <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-</pre>
-<script>
-let tech_elems = document.getElementsByClassName('technology');
-for (let elem of tech_elems) {
-    elem.title = 'Click to highlight all occurences of this technology';
-    elem.addEventListener('click', function (e) {
-        let tech = this.innerHTML;
-        console.log(tech);
-        for (let el of tech_elems) {
-            if (el.innerHTML == tech) {
-                el.classList.toggle('highlight');
-            }
-        }
-    }, false);
-}
+    <header>
+        <h1><a href="/">
+                Jakub Młokosiewicz <span class="url">// hckr.pl</span>
+                <div class="motto">I like to tinker with software</div>
+            </a></h1>
 
-</script>
+        <ul class="menu">
+            <li><a href="#!/My_projects/">Browse my projects</a></li>
+            <li><a href="Jakub_Młokosiewcz_CV_en.pdf">My CV</a></li>
+            <li><a href="#!/About_me.html">About me</a></li>
+            <li><a href="https://github.com/hckr">My GitHub profile</a></li>
+        </ul>
+    </header>
+
+    <script>
+        const routingTree = [
+            ['Welcome.html'],
+            ['About me.html'],
+            ['My projects', [
+                ['README.txt'],
+                ['Web technologies', [
+                    ['Throw an Arrow.html'],
+                    ['Logic-algebraic yachting.html'],
+                    ['Employee management.html'],
+                    ['Facebook Post Screenshot.html'],
+                    ['Endless Horse Run.html'],
+                    ['K-means visualization.html'],
+                    ['GitHub News Filter.html'],
+                    ['HTML5 video matrix code effect.html'],
+                    ['Web GUI.html'],
+                ]],
+                ['C++', [
+                    ['Space Logic Adventure.html'],
+                    ['ThreadPool.html'],
+                    ['tbb_mandelbrot.html'],
+                    ['SimpleHTTP.html'],
+                ]],
+                ['Python', [
+                    ['Engineering thesis.html'],
+                    ['Signal processing.html'],
+                    ['Fuzzer.html'],
+                ]],
+                ['Other', [
+                    ['Padding Oracle Attack.html'],
+                    ['Arduino.html'],
+                ]]
+            ]]];
+    </script>
+
+    <div id="contents">
+
+        <div id="!/Welcome.html" class="box-content">
+            <p>Hi! Welcome to my home page.</p>
+            <p>I wanted to make it stand out a bit and finally got inspired by text mode interfaces, mainly Midnight
+                Commander, a Linux console file manager. Let's say it's a very loose adaptation :)</p>
+            <p>Use up and down arrows to move between files in a virtual directory tree.<br>
+                Press enter to switch to a directory.</p>
+            <p>A slightly less fun option is also possible – you can just click (or tap) the options.</p>
+            <p>Previous version of this page <a href="old/index.html">can be found here</a>.</p>
+        </div>
+
+        <div id="!/About_me.html" class="box-content">
+            <p>I like to code and honestly don't understand <span
+                    title="there are people who are interested in public transportation :o">why someone
+                    would like trains</span> or <span
+                    title="I mean tracking scores, who playes where, etc., not training">sports</span>.<br>
+                To each their own, I guess.</p>
+            <p>I discovered programming near the end of the primary school. I was playing with Excel and in the process
+                of trying all the interesting, and also less interesting, options. I found an editor for creating
+                windows in which I could place different controls (like buttons, text fields and so on). Even though, as
+                far as I recall, I didn't manage to add any logic then, the sheer pleasure of having my own designed
+                window showing after pressing a "play" key on the Excel toolbar was enough to get me interested. Soon I
+                discovered it's called called <span title="Visual Basic for Applications">VBA</span>. Soon after I found
+                a book about Visual Basic .NET (slightly different thing) during shopping and asked my parents to buy it
+                for me. When I got access to the internet, I stumbled upon <a
+                    href="http://coderscity.net">CodersCity.net</a> (in Polish) and, after some time, <a
+                    href="https://forumweb.pl">Forumweb.pl</a>, where I received much guidance.</p>
+            <p>Long history short, I started programming in Visual Basic, then I also got interested in web
+                development. Starting with very simple layuts in HTML and CSS, and poorly chosen colors, I got better
+                over time and also learned PHP which enabled me to create websites with login and interaction with
+                database (MySQL in my case). JavaScript followed nicely as a way to do things in browser without
+                necessarily reloading the page. On university I got a chance to finally learn how to properly manage
+                memory in C++ which previously discouraged me from using it (I also got familiar with Linux which I
+                happily use to this day), not mentioning less appealing look of a console application, compared to a web
+                page which could be easily styled with CSS (is it why we have full-blown editors written in web
+                technolgies and Electron? :D). All jokes aside, I know there are <span
+                    title="Graphical User Interface">GUI</span> libraries for C++. Some even embed JavaScript engine
+                inside (Qt's QML)! I also have some experience with Python which I've used for example for convenience,
+                web development or some kind of data science. And these, of course, aren't all programming
+                languages I've ever used.</p>
+            <p>What I mean, at some point a specific language becomes just a tool for a job and a good coder should be
+                able to easily transition between different languages and frameworks, and choose them well. I strive to
+                be such a programmer each day :)</p>
+            <p>I hope I didn't bore you. Please, check out my projects and don't hesitate to improve something if you've
+                got an idea (issues and pull requests are very welcome)!</p>
+        </div>
+
+        <div id="!/My_projects/README.txt" class="box-content">
+            I've ordered my personal projects by category.
+        </div>
+
+        <div id="!/My_projects/Web_technologies/Throw_an_Arrow.html" class="box-content">
+            <p>Throw an Arrow is a game made for Gynvael's Summer GameDev Challenge 2018.</p>
+
+            <p><a class="highlighted" href="https://github.com/hckr/throw-an-arrow">Code repository</a></p>
+            <p><a class="highlighted" href="https://hckr.pl/throw-an-arrow">Play online</a></p>
+        </div>
+
+        <div id="!/My_projects/Web_technologies/Logic-algebraic_yachting.html" class="box-content">
+            <p>A project for Decision Support Systems classes.</p>
+
+            <p><a class="highlighted" href="https://github.com/hckr/logic-algebraic-yachting">Code repository</a></p>
+            <p><a class="highlighted" href="https://hckr.pl/logic-algebraic-yachting/en.html">Available online</a></p>
+        </div>
+
+        <div id="!/My_projects/Web_technologies/Employee_management.html" class="box-content">
+            <p>A CRUD application for employee data management with different access levels (in Polish).</p>
+
+            <p><a class="highlighted" href="https://github.com/hckr/si_lab">Code repository</a></p>
+            <p><a class="highlighted" href="http://si.luke.co.pl">Test it out online (in Polish)</a></p>
+        </div>
+
+        <div id="!/My_projects/Web_technologies/Facebook_Post_Screenshot.html" class="box-content">
+            <p>Firefox Web Extension to save Facebook posts as images.</p>
+
+            <p><a class="highlighted" href="https://github.com/hckr/fb-post-screenshot">Code repository</a></p>
+            <p><a class="highlighted" href="https://hckr.pl/fb-post-screenshot/">Landing page</a></p>
+            <p><a class="highlighted"
+                    href="https://addons.mozilla.org/en-US/firefox/addon/facebook-post-screenshot/">Entry on Firefox
+                    Add-ons website</a></p>
+        </div>
+
+        <div id="!/My_projects/Web_technologies/Endless_Horse_Run.html" class="box-content">
+            <p>A game in which a horse runs endlessly.</p>
+
+            <p><a class="highlighted" href="https://github.com/hckr/endless-horse-run">Code repository</a></p>
+            <p><a class="highlighted" href="https://hckr.pl/endless-horse-run/">Play online</a></p>
+            <p><a class="highlighted"
+                    href="https://play.google.com/store/apps/details?id=pl.hckr.endlesshorserun">Version for Android
+                    smartphones</a></p>
+        </div>
+
+        <div id="!/My_projects/Web_technologies/K-means_visualization.html" class="box-content">
+            <p>Two-dimensional visualization of k-means clustering algorithm.</p>
+
+            <p><a class="highlighted" href="https://github.com/hckr/k-means-visualization">Code repository</a></p>
+            <p><a class="highlighted" href="https://hckr.pl/k-means-visualization">K-means visualization online</a></p>
+        </div>
+
+        <div id="!/My_projects/Web_technologies/GitHub_News_Filter.html" class="box-content">
+            <p>Userscript to filter GitHub news feed using case-insensitive regular expression.</p>
+
+            <p><a class="highlighted" href="https://github.com/hckr/github-news-filter">Code repository</a></p>
+            <p><a class="highlighted" href="https://hckr.pl/github-news-filter/">Installation instructions</a></p>
+        </div>
+
+        <div id="!/My_projects/Web_technologies/HTML5_video_matrix_code_effect.html" class="box-content">
+            <p>An attempt to create a matrix-like effect on a video (from a file or a webcam).</p>
+
+            <p><a class="highlighted" href="https://github.com/hckr/html5-video-matrix-code-effect">Code repository</a>
+            </p>
+            <p><a class="highlighted" href="https://hckr.pl/html5-video-matrix-code-effect/">Check it out online</a></p>
+        </div>
+
+        <div id="!/My_projects/Web_technologies/Web_GUI.html" class="box-content">
+            <p>A very old project of mine. An attempt to create a web interface mimicking a desktop.</p>
+
+            <p><a class="highlighted" href="https://github.com/hckr/web-gui">Code repository</a></p>
+            <p><a class="highlighted" href="http://gui-demo.luke.co.pl/">Check it out online</a></p>
+        </div>
+
+        <div id="!/My_projects/C++/Space_Logic_Adventure.html" class="box-content">
+            <p>Space Logic Adventure is an arcade game I made for <a
+                    href="https://gynvael.coldwind.pl/?id=657">Gynvael's
+                    Summer GameDev Challenge 2017</a>. I managed to <a href="http://gynvael.coldwind.pl/?id=663">win the
+                    first place</a> :)</p>
+
+            <p><a class="highlighted" href="https://github.com/hckr/space-logic-adventure">Code repository</a></p>
+            <p><a class="highlighted" href="https://hckr.pl/space-logic-adventure">Landing page with downloads</a></p>
+        </div>
+
+        <div id="!/My_projects/C++/ThreadPool.html" class="box-content">
+            <p>A thread pool implementation in C++11.</p>
+
+            <p><a class="highlighted" href="https://github.com/hckr/threadpool">Code repository</a></p>
+        </div>
+
+        <div id="!/My_projects/C++/tbb_mandelbrot.html" class="box-content">
+            <p>Generating and visualizing Mandelbrot set/fractal using Threading Building Blocks (TBB) and png++.</p>
+
+            <p><a class="highlighted" href="https://github.com/hckr/tbb_mandelbrot">Code repository</a></p>
+        </div>
+
+        <div id="!/My_projects/C++/SimpleHTTP.html" class="box-content">
+            <p>A simple HTTP server written using C++ and Winsock.</p>
+
+            <p><a class="highlighted" href="https://github.com/hckr/SimpleHTTP">Code repository</a></p>
+        </div>
+
+        <div id="!/My_projects/Python/Engineering_thesis.html" class="box-content">
+            <p>My engineering thesis on reinforcement learning applied to Connect 4.</p>
+
+            <p><a class="highlighted" href="https://github.com/hckr/engineering-thesis">Code repository</a></p>
+        </div>
+
+        <div id="!/My_projects/Python/Signal_processing.html" class="box-content">
+            <p>Library and scripts created to generate PDF reports for signal processing classes.</p>
+
+            <p><a class="highlighted" href="https://github.com/hckr/sig_proc">Code repository</a></p>
+        </div>
+
+        <div id="!/My_projects/Python/Fuzzer.html" class="box-content">
+            <p>GUI script for fuzzy logic classes (in Polish).</p>
+
+            <p><a class="highlighted" href="https://github.com/hckr/fuzzer">Code repository</a></p>
+        </div>
+
+        <div id="!/My_projects/Other/Padding_Oracle_Attack.html" class="box-content">
+            <p>.NET Core C# demonstration of a padding oracle attack against AES CBC (PKCS7, ANSI X.923) along with a
+                report with Q&A.</p>
+
+            <p><a class="highlighted" href="https://github.com/hckr/padding-oracle-attack">Code repository</a></p>
+        </div>
+
+        <div id="!/My_projects/Other/Arduino.html" class="box-content">
+            <p>Small projects using a well-known prototyping board.</p>
+
+            <p><a class="highlighted" href="https://github.com/hckr/arduino/tree/master/nokia_snake_clone">Code
+                    repository – snake clone</a></p>
+            <p><a class="highlighted" href="https://github.com/hckr/arduino/tree/master/distance_temperature_lcd">Code
+                    repository – distance sensor</a></p>
+        </div>
+
+        <!-- TODO: these below could probably be implemented somehow better -->
+
+        <div id="!/My_projects" class="box-content">
+            Press ENTER to explore directory <em>My projects</em>.
+        </div>
+
+        <div id="!/My_projects/Web_technologies" class="box-content">
+            Press ENTER to explore directory <em>Web technologies</em>.
+        </div>
+
+        <div id="!/My_projects/C++" class="box-content">
+            Press ENTER to explore directory <em>C++</em>.
+        </div>
+
+        <div id="!/My_projects/Python" class="box-content">
+            Press ENTER to explore directory <em>Python</em>.
+        </div>
+
+        <div id="!/My_projects/Other" class="box-content">
+            Press ENTER to explore directory <em>Other</em>.
+        </div>
+
+        <div id=".." class="box-content">
+            Press ENTER to go up.
+        </div>
+    </div>
+
+    <div class="interface">
+        <div class="box box-navigation box-title-outer-backlay">
+            <h3 class="box-title-outer title-value">
+                <!-- -->
+            </h3>
+            <div class="box-overflow-container box-overflow-container-outer-title-padding">
+                <ul class="box-list"></ul>
+            </div>
+        </div>
+        <div class="box box-preview">
+            <div class="box-overflow-container">
+                <h3 class="box-title-inner">
+                    <span class="title-value">
+                        <!-- -->
+                    </span>
+                    <span class="scroll-percent">
+                        <span class="scroll-percent-value">
+                            <!-- -->
+                        </span>%
+                    </span>
+                </h3>
+                <!-- <div class="box-content"></div> -->
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>

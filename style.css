@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+    color: #25262b;
+    background: #f98ccf;
+}
+
+[title] {
+    cursor: help;
+    border-bottom: 1px dashed #b0b4cc88;
+    transition: border-bottom-color ease-in 0.3s;
+    position: relative;
+}
+
+[title]:hover,
+[title]:focus {
+    border-bottom-color: #b0b4cc;
+}
+
+@media (pointer: coarse),
+(hover: none) {
+
+    [title]:hover::after {
+        content: attr(title);
+        position: fixed;
+        left: -1px;
+        right: -1px;
+        top: 10px;
+        color: #25262b;
+        background-color: #fff;
+        border: 1px solid #f98ccf;
+        padding: 3px;
+        z-index: 100;
+    }
+
+}
+
+html {
+    background: #25262b;
+    color: #b0b4cc;
+    font-size: 18px;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+body {
+    box-sizing: border-box;
+    padding: 25px 30px;
+    height: 100vh;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    font-family: 'Major Mono Display', monospace;
+    text-transform: lowercase;
+}
+
+h1 {
+    color: #8cc4f9;
+    font-size: 28px;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+h1 .url,
+h1 .motto {
+    color: #ccc;
+}
+
+h1 .url {
+    font-size: 20px;
+}
+
+.motto {
+    position: relative;
+    margin-left: 6px;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 16px;
+}
+
+@keyframes blink {
+    from {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.motto::after {
+    content: '_';
+    color: #f98ccf;
+    transition: color ease-in 0.3s;
+    animation: 3s infinite blink;
+}
+
+.motto::before {
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition: transform ease-in 0.3s;
+    background: #f98ccf;
+    mix-blend-mode: overlay;
+}
+
+h1:hover .motto::before,
+h1:focus-within .motto::before {
+    transform: scaleX(1);
+}
+
+.interface {
+    height: calc(100vh - 150px);
+    margin-top: 50px;
+    display: flex;
+}
+
+.box {
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid #7e7f81;
+}
+
+.interface .box {
+    width: calc(50% - 5px);
+}
+
+.interface .box:not(:last-child) {
+    margin-right: 10px;
+}
+
+.box-title-outer {
+    position: absolute;
+    top: 0;
+    left: 24px;
+    transform: translateY(-50%);
+    background: #7e7f81;
+    color: #25262b;
+    padding: 2px 5px;
+    font-weight: normal;
+    z-index: 10;
+}
+
+.box-title-outer-backlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 6px;
+    height: 14px;
+    background: #25262b;
+    z-index: 1;
+}
+
+.box-title-inner {
+    position: sticky;
+    top: 0;
+    border-top: 5px solid #25262b;
+    background: #b0c0ff;
+    color: #25262b;
+    font-weight: normal;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-title-inner .title-value {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: calc(100% - 50px);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    position: relative;
+    margin-left: 10px;
+}
+
+.menu li::before {
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform ease-in 0.3s;
+    background: #f98ccf;
+    mix-blend-mode: overlay;
+}
+
+.menu li:hover::before,
+.menu li:focus-within::before {
+    transform: scaleX(1);
+}
+
+.menu a {
+    display: inline-block;
+    padding: 5px;
+}
+
+.menu a:before {
+    content: '[ ';
+}
+
+.menu a:after {
+    content: ' ]';
+}
+
+.box-overflow-container {
+    position: relative;
+    box-sizing: border-box;
+    overflow-y: auto;
+    height: 100%;
+    padding: 0 5px 5px;
+    scrollbar-width: thin;
+    scrollbar-color: #8cc4f988 transparent;
+}
+
+.box-overflow-container-outer-title-padding {
+    padding-top: 14px;
+}
+
+.box-list {
+    padding-top: 5px;
+    list-style: none;
+}
+
+.box-list li.selected {
+    background: #b0c0ff;
+    color: #25262b;
+}
+
+.box-list a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 2px 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.box-list a:focus {
+    outline: 2px solid #f98ccf88;
+}
+
+.box-list-hint {
+    opacity: 0.5;
+}
+
+.box-content {
+    padding: 5px;
+}
+
+.box-content p:not(:last-of-type) {
+    margin-bottom: 10px;
+}
+
+.box-content a {
+    border-bottom: 1px solid #b0c0ff88;
+    transition: border-bottom-color ease-in 0.3s;
+}
+
+.box-content a:hover {
+    border-bottom-color: #b0c0ff;
+}
+
+.box-content a.highlighted {
+    position: relative;
+}
+
+.box-content a.highlighted::before {
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #f98ccf;
+    mix-blend-mode: overlay;
+}
+
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+    /* mix-blend-mode: overlay; fix for Chrome and Opera */
+    /* https://twitter.com/jensimmons/status/1127378244712435713 */
+
+    .box-content a.highlighted::before,
+    .motto::before,
+    .menu li::before {
+        background: #f98ccf;
+        opacity: 0.5;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+
+    h1 .url {
+        display: none;
+    }
+
+    .menu li {
+        margin-left: 0;
+    }
+
+}
+
+@media screen and (max-width: 1150px) {
+
+    .menu {
+        flex-wrap: wrap;
+        max-width: 400px;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+
+    body {
+        padding: 5px;
+    }
+
+    body::after {
+        content: '';
+        display: block;
+        height: 5px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h1 .motto {
+        font-size: 14px;
+    }
+
+    .menu {
+        margin-top: 15px;
+    }
+
+    .interface {
+        display: block;
+        height: auto;
+        margin-top: 25px;
+    }
+
+    .interface .box {
+        width: 100%;
+    }
+
+    .interface .box:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .box-navigation .box-overflow-container {
+        max-height: 180px;
+    }
+
+    .box-title-inner .title-value {
+        max-width: unset;
+    }
+
+    .title-value {
+        font-size: 16px;
+    }
+
+    .scroll-percent {
+        display: none;
+    }
+}
