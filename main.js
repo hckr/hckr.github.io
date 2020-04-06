@@ -1,5 +1,11 @@
 console.log('Oh, hi there :)');
 
+document.addEventListener('click', e => {
+    if (e.target.tagName === 'A') {
+        e.target.blur();
+    }
+}, false);
+
 const contents = {};
 const contentsDiv = document.getElementById('contents');
 contentsDiv.querySelectorAll('div').forEach(c => {
