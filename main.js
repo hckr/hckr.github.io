@@ -21,6 +21,13 @@ window.onhashchange = handleRouting;
 setTimeout(handleRouting);
 
 window.addEventListener('keydown', e => {
+    if (e.keyCode === 38 || e.keyCode === 40) {
+        // allow for scroling using arrow keys when a scrollable container has focus
+        if (document.activeElement && document.activeElement != document.body && document.activeElement.scrollHeight > document.activeElement.offsetHeight) {
+            return;
+        }
+    }
+
     let currentNavElement = navigationList.querySelector('.selected');
     if (currentNavElement) {
         switch (e.keyCode) {

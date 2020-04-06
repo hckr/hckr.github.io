@@ -3,9 +3,13 @@
     padding: 0;
 }
 
+:focus {
+    outline: 2px solid #d496fa88;
+}
+
 ::selection {
     color: #25262b;
-    background: #f98ccf;
+    background: #89fabc;
 }
 
 [title] {
@@ -120,6 +124,7 @@ h1 .url {
     transition: transform ease-in 0.3s;
     background: #f98ccf;
     mix-blend-mode: overlay;
+    opacity: 0.5; /* for Chrome and other browsers not implementing the above properly */
 }
 
 h1:hover .motto::before,
@@ -214,8 +219,9 @@ header {
     left: 0;
     transform: scaleX(0);
     transition: transform ease-in 0.3s;
-    background: #f98ccf;
+    background: #d496fa;
     mix-blend-mode: overlay;
+    opacity: 0.5; /* for Chrome and other browsers not implementing the above properly */
 }
 
 .menu li:hover::before,
@@ -270,10 +276,6 @@ header {
     white-space: nowrap;
 }
 
-.box-list a:focus {
-    outline: 2px solid #f98ccf88;
-}
-
 .box-list-hint {
     opacity: 0.5;
 }
@@ -286,6 +288,13 @@ header {
     margin-bottom: 10px;
 }
 
+.box-content div.call-to-action {
+    border: 1px solid #fff2;
+    padding: 10px;
+    display: table; /* block element with auto centering */
+    margin: 20px auto;
+}
+
 .box-content a {
     border-bottom: 1px solid #b0c0ff88;
     transition: border-bottom-color ease-in 0.3s;
@@ -296,31 +305,14 @@ header {
 }
 
 .box-content a.highlighted {
-    position: relative;
+    color: #f0fabb;
+    outline-color: #fab5af;
+    outline-offset: 3px;
 }
 
-.box-content a.highlighted::before {
-    content: '';
-    position: absolute;
-    pointer-events: none;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: #f98ccf;
-    mix-blend-mode: overlay;
-}
-
-@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
-    /* mix-blend-mode: overlay; fix for Chrome and Opera */
-    /* https://twitter.com/jensimmons/status/1127378244712435713 */
-
-    .box-content a.highlighted::before,
-    .motto::before,
-    .menu li::before {
-        background: #f98ccf;
-        opacity: 0.5;
-    }
+.box-content code {
+    font: inherit;
+    color: #b4a5cc;
 }
 
 @media screen and (max-width: 1400px) {
