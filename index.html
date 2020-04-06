@@ -15,6 +15,16 @@
     <meta property="og:image" content="https://hckr.pl/og_image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162891460-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-162891460-1', {
+            'page_path': location.pathname + location.hash
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -185,7 +195,8 @@
             <p>A CRUD application for employee data management with different access levels (in Polish).</p>
 
             <div class="call-to-action"><a class="highlighted" href="http://si.luke.co.pl">Test it out online (in
-                    Polish)</a></div>
+                    Polish)</a> or check out <a class="highlighted" href="https://github.com/hckr/si_lab">the code</a>.
+            </div>
 
             <p>When we were assigned to write a CRUD for employee management in PHP, I used this oppurtunity to do
                 it in a "more proper way" than it was presented during classes, which I then skipped, handing out the

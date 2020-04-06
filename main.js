@@ -104,6 +104,10 @@ function handleRouting() {
         return;
     }
 
+    gtag('config', 'UA-162891460-1', {
+        'page_path': location.pathname + location.hash
+    });
+
     const pathPrefix = path.replace(/\/[^/]+$/, '/').replace(/\/$/, '');
 
     updateNavigation(pathPrefix, routingsOnPath[routingsOnPath.length - 2], label)
