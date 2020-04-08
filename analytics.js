@@ -21,7 +21,7 @@ if (!document.cookie.split(';').map(c => c.trim()).includes('cookieAlertDismisse
             <span
                 style="padding: 3px; cursor:pointer; text-decoration: underline; border: none;"
                 title="Accept and close this message"
-                onclick="document.cookie='cookieAlertDismissed=1; expires=Tue, 19 Jan 2038';this.parentNode.parentNode.removeChild(this.parentNode);"
+                onclick="document.cookie='cookieAlertDismissed=1; expires=Tue, 19 Jan 2038;path=/';this.parentNode.parentNode.removeChild(this.parentNode);"
             >
                 ${closeText} ✖
             </span>
