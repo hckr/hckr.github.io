@@ -33,9 +33,9 @@
 
         <ul class="menu">
             <li><a href="#!/My_projects/">Browse my projects</a></li>
-            <li><a href="Jakub_Młokosiewcz_CV_en.pdf">My CV</a></li>
+            <li><a class="track" href="Jakub_Młokosiewcz_CV_en.pdf">My CV</a></li>
             <li><a href="#!/About_me.html">About me</a></li>
-            <li><a href="https://github.com/hckr">My GitHub profile</a></li>
+            <li><a class="track" href="https://github.com/hckr">My GitHub profile</a></li>
         </ul>
     </header>
 
@@ -503,7 +503,7 @@
         if (navigator.cookieEnabled !== false && !document.cookie.split(';').map(c => c.trim()).includes('cookieAlertDismissed=1')) {
             document.body.insertAdjacentHTML('beforeend', `
                 <div style="position: sticky; bottom: 0; left: 0; right: 0; z-index: 1000; padding: 5px 10px; background: #25262b; color: #ccc; text-align: left; font-size: 16px;">
-                    This website uses cookies for statistical purposes (transmits data to Google Analytics).
+                    This website uses cookies for statistical purposes (and transmits data to Google Analytics).
                     You can block the relevant cookies in your browser settings.
                     <span
                         style="padding: 3px; cursor:pointer; text-decoration: underline; border: none;"
@@ -515,6 +515,21 @@
                 </div>
             `);
         }
+
+        function trackClick(e) {
+            if (window.google_tag_manager) {
+                const url = this.href;
+                gtag('event', 'click', {
+                    'event_category': 'outbound',
+                    'event_label': url,
+                    'transport_type': 'beacon',
+                    'event_callback': () => { document.location = url; }
+                });
+                e.preventDefault();
+            }
+        }
+
+        document.querySelectorAll('a.track').forEach(a => a.addEventListener('click', trackClick, false));
     </script>
     <script src="main.js"></script>
 </body>
