@@ -1,17 +1,17 @@
-if (!document.cookie.split(';').map(c => c.trim()).includes('cookieAlertDismissed=1')) {
+if (navigator.cookieEnabled !== false && !document.cookie.split(';').map(c => c.trim()).includes('cookieAlertDismissed=1')) {
     let message, closeText;
     switch (document.documentElement.lang) {
         case 'pl':
             message = `
-                Ta strona wykorzystuje pliki cookie do celów statystycznych.
-                W ustawieniach przeglądarki można zablokować pliki cookie z dowolnej domeny.
+            Ta strona wykorzystuje pliki cookie do celów statystycznych (przesyła dane do Google Analytics).
+            W ustawieniach przeglądarki można zablokować odpowiednie pliki cookie.
             `;
             closeText = 'zamknij';
             break;
         default:
             message = `
-            This site uses cookies for statistical purposes.
-            You can deny cookies from any domain in your browser settings.
+            This website uses cookies for statistical purposes (transmits data to Google Analytics).
+            You can block the relevant cookies in your browser settings.
             `;
             closeText = 'close';
     }
