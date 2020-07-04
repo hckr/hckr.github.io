@@ -1,536 +1,578 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jakub Młokosiewicz – hckr.pl</title>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&amp;family=Major+Mono+Display&amp;display=swap">
-    <link rel="stylesheet" href="style.css">
-    <meta property="og:url" content="https://hckr.pl" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Jakub Młokosiewicz – hckr.pl" />
-    <meta property="og:description"
-        content="Hi! Welcome to my home page. I wanted to make it stand out a bit and finally got inspired by text mode interfaces, mainly Midnight Commander, a Linux console file manager." />
-    <meta property="og:image" content="https://hckr.pl/og_image.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162891460-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-162891460-1', { 'send_page_view': false });
-    </script>
-</head>
-<body>
-    <header>
-        <h1><a href="/">
-                Jakub Młokosiewicz <span class="url">// hckr.pl</span>
-                <div class="motto">I like to tinker with software</div>
-            </a></h1>
-
-        <ul class="menu">
-            <li><a href="#!/My_projects/">Browse my projects</a></li>
-            <li><a class="track" href="Jakub_Młokosiewcz_CV_en.pdf">My CV</a></li>
-            <li><a href="#!/About_me.html">About me</a></li>
-            <li><a class="track" href="https://github.com/hckr">My GitHub profile</a></li>
-        </ul>
-    </header>
-
-    <script>
-        const routingTree = [
-            ['Welcome.html'],
-            ['About me.html'],
-            ['My projects', [
-                ['README.html'],
-                ['Web technologies', [
-                    ['Throw an Arrow.html'],
-                    ['Logic-algebraic yachting.html'],
-                    ['Employee management.html'],
-                    ['Facebook Post Screenshot.html'],
-                    ['Endless Horse Run.html'],
-                    ['K-means visualization.html'],
-                    ['GitHub News Filter.html'],
-                    ['HTML5 video matrix code effect.html'],
-                    ['Web GUI.html'],
-                ]],
-                ['C++', [
-                    ['Space Logic Adventure.html'],
-                    ['ThreadPool.html'],
-                    ['tbb_mandelbrot.html'],
-                    ['SimpleHTTP.html'],
-                ]],
-                ['Python', [
-                    ['Engineering thesis.html'],
-                    ['Signal processing.html'],
-                    ['Fuzzer.html'],
-                ]],
-                ['Other', [
-                    ['Padding Oracle Attack.html'],
-                    ['Arduino.html'],
-                    ['Declarative Pong.html'],
-                ]]
-            ]]];
-    </script>
-
-    <div id="contents">
-
-        <div id="!/Welcome.html" class="box-content">
-            <p>Hi! Welcome to my home page.</p>
-            <p>I wanted to make it stand out a bit and finally got inspired by text mode interfaces, mainly Midnight
-                Commander, a Linux console file manager. Let's say it's a very loose adaptation :)</p>
-            <p>Use up and down arrows to move between files in a virtual directory tree.<br>
-                Press enter to switch to a directory.</p>
-            <p>A slightly less fun option is also possible – you can just click (or tap) the options.</p>
-            <p>Previous version of this page <a href="old/index.html">can be found here</a>.</p>
-        </div>
-
-        <div id="!/About_me.html" class="box-content">
-            <p>I like to code and honestly don't understand <span
-                    title="there are people who are interested in public transportation :o">why someone
-                    would like trains</span> or <span
-                    title="I mean tracking scores, who playes where, etc., not training">sports</span>.<br>
-                To each their own, I guess.</p>
-            <p>I discovered programming near the end of the primary school. I was playing with Excel and in the process
-                of trying all the interesting, and also less interesting, options. I found an editor for creating
-                windows in which I could place different controls (like buttons, text fields and so on). Even though, as
-                far as I recall, I didn't manage to add any logic then, the sheer pleasure of having my own designed
-                window showing after pressing a "play" key on the Excel toolbar was enough to get me interested. Soon I
-                discovered it's called <span title="Visual Basic for Applications">VBA</span>. Soon after I found
-                a book about Visual Basic .NET (slightly different thing) during shopping and asked my parents to buy it
-                for me. When I got access to the internet, I stumbled upon <a
-                    href="http://coderscity.net">CodersCity.net</a> (in Polish) and, after some time, <a
-                    href="https://forumweb.pl">Forumweb.pl</a>, where I received much guidance.</p>
-            <p>Long history short, I started programming in Visual Basic, then I also got interested in web
-                development. Starting with very simple layuts in HTML and CSS, and poorly chosen colors, I got better
-                over time and also learned PHP which enabled me to create websites with login and interaction with
-                a database (MySQL in my case). JavaScript followed nicely as a way to do things in browser without
-                necessarily reloading the page. On university I got a chance to finally learn how to properly manage
-                memory in C++ which previously discouraged me from using it (I also got familiar with Linux which I
-                happily use to this day), not mentioning less appealing look of a console application, compared to a web
-                page which could be easily styled with CSS (is it why we have full-blown editors written in web
-                technolgies and Electron? :D). All jokes aside, I know there are <span
-                    title="Graphical User Interface">GUI</span> libraries for C++. Some even embed JavaScript engine
-                inside (Qt's QML)! I also have some experience with Python which I've used for example for convenience,
-                web development or some kind of data science. And these, of course, aren't all programming
-                languages I've ever used.</p>
-            <p>What I mean, at some point a specific language becomes just a tool for a job and a good coder should be
-                able to easily transition between different languages and frameworks, and choose them well. I strive to
-                be such a programmer each day :)</p>
-            <p>I hope I didn't bore you. Please, check out my projects and don't hesitate to improve something if you've
-                got an idea (issues and pull requests are very welcome)!</p>
-            <p>If you'd like to contact me, my e-mail is available in the CV.</p>
-        </div>
-
-        <div id="!/My_projects/README.html" class="box-content">
-            <p>I've ordered my personal projects by category. Please, select a specific directory.</p>
-
-            <p>In <em>Web technolgies</em>, you'll find two games (in JavaScript), a <span
-                    title="Create, Read, Update, Delete">CRUD</span> (in PHP), a decision support system with a simple
-                embedded language (in JavaScript), two utilities: for Facebook and for Github (web extension and
-                userscript), and more.</p>
-
-            <p>In <em>C++</em>, there is a game, a thread pool library, and more.</p>
-
-            <p>In <em>Python</em>, you can find my engineering thesis with an implementation of Connect 4 (a game) and
-                an application of reinforcement learning, a tool for report generation for signal processing classes,
-                and more.</p>
-
-            <p>In <em>Other</em>, you'll find my implementation of snake for Arduino, demonstration of a padding oracle
-                attack against <span title="Advanced Encryption Standard">AES</span> <span
-                    title="Cipher Block Chaining">CBC</span>, a somewhat declarative approach to Pong, and
-                more.</p>
-        </div>
-
-        <div id="!/My_projects/Web_technologies/Throw_an_Arrow.html" class="box-content">
-            <p>Throw an Arrow is a game made for <a href="https://gynvael.coldwind.pl/?id=686">Gynvael's Summer GameDev
-                    Challenge 2018</a>. </p>
-
-            <div class="call-to-action"><a class="highlighted" href="https://hckr.pl/throw-an-arrow">Play online</a> or
-                take a look at <a class="highlighted" href="https://github.com/hckr/throw-an-arrow">the code</a>.</div>
-
-            <p>There were some weird constraints like the content should be rendered into a 360x400
-                <code>&lt;canvas&gt;</code> which is then stretched to fill the full screen or there could be at most 32
-                colors displayed used at the same time. On top of that, the whole game had to have the size of at most
-                31337 bytes.</p>
-        </div>
-
-        <div id="!/My_projects/Web_technologies/Logic-algebraic_yachting.html" class="box-content">
-            <p>The application is based on the logical-algebraic method discussed during Decision Support Systems
-                classes on Wroclaw University of Science and Technology. The program infers, based on previously defined
-                variables and logical facts, what the effects of the decisions given by the user will be (analysis task)
-                or what decisions should be made to achieve the desired effects (decision support task). The loaded
-                database relates to yacht control. I was responsible for the implementation, a friend of mine
-                developed the logical rules.</p>
-
-            <div class="call-to-action"><a class="highlighted"
-                    href="https://hckr.pl/logic-algebraic-yachting/en.html">Try it online</a> or check out <a
-                    class="highlighted" href="https://github.com/hckr/logic-algebraic-yachting">the implementation</a>.
-            </div>
-
-            <p>The application supports writing <a class="highlighted"
-                    href="https://github.com/hckr/logic-algebraic-yachting/blob/master/yachting_en.lamd">rules
-                    in a human-friendly format</a>, which is converted to internal representation (<a
-                    class="highlighted"
-                    href="https://github.com/hckr/logic-algebraic-yachting/blob/master/parsing.js">parsed</a>, <a
-                    class="highlighted"
-                    href="https://github.com/hckr/logic-algebraic-yachting/blob/master/interpreting.js">interpreted</a>)
-                and checked for errors <a
-                    href="https://github.com/hckr/logic-algebraic-yachting/blob/master/main.js#L10">during the app
-                    initialization</a>.</p>
-
-            <p>Input and output facts can be easily constructed in the application <span
-                    title="Graphical User Interface">GUI</span>. First, a template logical
-                expression should be written with <code>?</code> in places where there should be variables. Then, after
-                pressing Enter or pressing a button, this expression will be checked for correctness and <code>?</code>
-                will be replaced with lists with meaningful variable names. After the selection is made, results are
-                shown below in a form of a table and logical expressions.</p>
-        </div>
-
-        <div id="!/My_projects/Web_technologies/Employee_management.html" class="box-content">
-            <p>A CRUD application for employee data management with different access levels (in Polish).</p>
-
-            <div class="call-to-action"><a class="highlighted" href="http://si.luke.co.pl">Test it out online (in
-                    Polish)</a> or check out <a class="highlighted" href="https://github.com/hckr/si_lab">the code</a>.
-            </div>
-
-            <p>When we were assigned to write a CRUD for employee management in PHP, I used this oppurtunity to do
-                it in a "more proper way" than it was presented during classes, which I then skipped, handing out the
-                task early.
-            </p>
-
-            <p>I programmed it in a <span title="Model View Controller">MVC</span> fashion. Even
-                though it's plain PHP,
-                it features <a class="highlighted"
-                    href="https://github.com/hckr/si_lab/blob/master/classes/Router.php">routing</a>,
-                <a class="highlighted"
-                    href="https://github.com/hckr/si_lab/tree/master/classes/controllers">controllers</a>,
-                <a class="highlighted" href="https://github.com/hckr/si_lab/tree/master/classes/models">models</a>,
-                and of course, a simple mechanism for <a class="highlighted"
-                    href="https://github.com/hckr/si_lab/blob/master/classes/View.php">views</a> which
-                allows for creation of <a class="highlighted"
-                    href="https://github.com/hckr/si_lab/blob/master/templates/partials/user_form.php">readable
-                    templates</a>. There is also a <a class="highlighted"
-                    href="https://github.com/hckr/si_lab/blob/master/classes/Validator.php">Validator class</a>
-                which is
-                easily extendable with new rules and <a class="highlighted"
-                    href="https://github.com/hckr/si_lab/blob/master/classes/models/User.php#L19">easy to use in
-                    models</a>.</p>
-        </div>
-
-        <div id="!/My_projects/Web_technologies/Facebook_Post_Screenshot.html" class="box-content">
-            <p>Firefox Web Extension to save Facebook posts as images.</p>
-
-            <div class="call-to-action">See the <a class="highlighted"
-                    href="https://hckr.pl/fb-post-screenshot/">landing page</a>, entry on <a class="highlighted"
-                    href="https://addons.mozilla.org/en-US/firefox/addon/facebook-post-screenshot/">Firefox
-                    Add-ons website</a> or take a look at <a class="highlighted"
-                    href="https://github.com/hckr/fb-post-screenshot">the code</a>.</div>
-
-            <p>Web Extension saves Facebook posts as images ("takes screenshot"). Add-on adds new option in each
-                post's menu to save it's screenshot (with all replies expanded). Screenshot can be also anonymized
-                (profile pictures blurred, names replaced with identifiers like "OP", "Profile 1", "Profile 2" and so
-                on). Large posts are split into multiple images each at most 8192 px tall (this can be changed up to
-                16000 px).
-            </p>
-
-            <p>Facebook changes the interface from time to time which causes the add-on to stop working partially or
-                even in full.</p>
-        </div>
-
-        <div id="!/My_projects/Web_technologies/Endless_Horse_Run.html" class="box-content">
-            <p>In this simple game you control a horse which has to jump to avoid the evil skeletons. The forst is
-                getting more dense with time which makes it harder to see when the enemy is approaching.</p>
-
-            <div class="call-to-action"><a class="highlighted" href="https://hckr.pl/endless-horse-run/">Play
-                    in the browser</a>, <a class="highlighted"
-                    href="https://play.google.com/store/apps/details?id=pl.hckr.endlesshorserun">download for
-                    Android</a> or take a look at <a class="highlighted"
-                    href="https://github.com/hckr/endless-horse-run">the code</a>.</div>
-
-            <p>Game was written in JavaScript and that made it possible to port it to Android with Cordova.</p>
-        </div>
-
-        <div id="!/My_projects/Web_technologies/K-means_visualization.html" class="box-content">
-            <p>Two-dimensional visualization of k-means clustering algorithm in the browser.</p>
-
-            <div class="call-to-action"><a class="highlighted" href="https://hckr.pl/k-means-visualization">Try it
-                    in
-                    the browser</a> or take a look at <a class="highlighted"
-                    href="https://github.com/hckr/k-means-visualization">the code</a>.</div>
-
-            <p>You can add data points
-                manually or at random and, similarly, centroids. The steps of the algorithm can be executed
-                automatically or step by step with a click on the button.</p>
-        </div>
-
-        <div id="!/My_projects/Web_technologies/GitHub_News_Filter.html" class="box-content">
-            <p>A Userscript to filter GitHub news feed using case-insensitive regular expression.</p>
-
-            <div class="call-to-action">See <a class="highlighted"
-                    href="https://hckr.pl/github-news-filter/">installation instructions</a> or check out <a
-                    class="highlighted" href="https://github.com/hckr/github-news-filter">the code</a>.
-            </div>
-
-            <p>The idea for this script came out from a simple need to have a way to quicky search through the GitHub
-                front page "activity".</p>
-        </div>
-
-        <div id="!/My_projects/Web_technologies/HTML5_video_matrix_code_effect.html" class="box-content">
-            <p>An attempt to create a matrix-like effect on a video (or a stream from a webcam).</p>
-
-            <div class="call-to-action"><a class="highlighted"
-                    href="https://hckr.pl/html5-video-matrix-code-effect/">Try it out</a> or check out <a
-                    class="highlighted" href="https://github.com/hckr/html5-video-matrix-code-effect">the code</a>.
-            </div>
-        </div>
-
-        <div id="!/My_projects/Web_technologies/Web_GUI.html" class="box-content">
-            <p>A very old project of mine. An attempt to create a web interface mimicking a desktop.</p>
-
-            <div class="call-to-action"><a class="highlighted" href="http://gui-demo.luke.co.pl/">See it online</a> or
-                check out
-                <a class="highlighted" href="https://github.com/hckr/web-gui">the code.
-                </a></div>
-        </div>
-
-        <div id="!/My_projects/C++/Space_Logic_Adventure.html" class="box-content">
-            <p>Space Logic Adventure is an arcade game I made for <a
-                    href="https://gynvael.coldwind.pl/?id=657">Gynvael's
-                    Summer GameDev Challenge 2017</a>. I managed to <a href="http://gynvael.coldwind.pl/?id=663">win
-                    the first place</a> :)</p>
-
-            <div class="call-to-action"><a class="highlighted" href="https://hckr.pl/space-logic-adventure/">Download
-                    and play</a> or take a look at <a class="highlighted"
-                    href="https://github.com/hckr/space-logic-adventure">the code</a>.</div>
-
-            <p>The task was to make a game using only the provided assets with a couple of exceptions. I'm not much
-                interested in games, hence I don't know what genre it is that I created. But it's definetety
-                somewhat
-                arcade and somewhat a puzzle. The goal of each level is to reach a field with the spaceship. Fields
-                disappear one second after standing on them which means you must move fast.</p>
-
-            <p>The game has multiple levels which means I had to design them somehow. I created a <a class="highlighted"
-                    href="https://github.com/hckr/space-logic-adventure/tree/master/dist/assets/levels">text format
-                    for level files</a>. Assets were supplied as separate files, so I created <a class="highlighted"
-                    href="https://github.com/hckr/space-logic-adventure/blob/master/tools/tileset_gen.py">a very
-                    simple texture packer</a>. At some places the code could've been written better and some
-                functionality not required by current levels isn't finished (I was coding it <span
-                    style="letter-spacing: 0.3em">fast</span>). Maybe I'll revisit and improve the game in the future.
-            </p>
-        </div>
-
-        <div id="!/My_projects/C++/ThreadPool.html" class="box-content">
-            <p>A thread pool implementation in C++11.</p>
-
-            <div class="call-to-action">Take a look at <a class="highlighted"
-                    href="https://github.com/hckr/threadpool">the code and example usage</a>.</div>
-
-            <p>Library makes it easy to schedule tasks (which can be anything assignable to
-                <code>std::function</code>)
-                to be executed in one of threads in a pool and then possibly receive a result if there is any (as a
-                thread pool should do per definition). I think it's an interesting peace of code to learn about the
-                concurrency features added in C++11. My implementation makes use of <code>std::unique_lock</code>,
-                <code>std::mutex</code> and <code>std::condition_variable</code> for synchronization, and
-                <code>std::packaged_task</code> which wraps a callable (and is ultimately called by one of the
-                threads) and makes available a <code>std::future</code> which is returned to the user and provides
-                access to the task result when it's ready.
-            </p>
-        </div>
-
-        <div id="!/My_projects/C++/tbb_mandelbrot.html" class="box-content">
-            <p>Generating and visualizing Mandelbrot set/fractal using <span
-                    title="Threading Building Blocks">TBB</span> and png++.
-            </p>
-
-            <div class="call-to-action">Take a look at <a class="highlighted"
-                    href="https://github.com/hckr/tbb_mandelbrot">the code and images</a>.</div>
-
-            <p>Project explores <code>tdd::flow::graph</code> features in the implementation of a somewhat
-                artifically created need to draw Mandelbrot fractals concurrently and then merge them into the third
-                image. If
-                you look for inspiration how to implement something with TBB, feel free to grab some code and maybe also
-                contribute! I of course can't guarantee that the code is safe and well-written, it was my first time
-                with TBB. But look at the images – something as easy as pixel offset during merge of two images can
-                make an interesting effect!</p>
-        </div>
-
-        <div id="!/My_projects/C++/SimpleHTTP.html" class="box-content">
-            <p>A simple HTTP server written using C++ and Winsock.</p>
-
-            <div class="call-to-action">Check out <a class="highlighted" href="https://github.com/hckr/SimpleHTTP">the
-                    code</a>.</div>
-
-            <p>It technically is a HTTP server, but all it does is receive a request, parse headers and return them in
-                an HTML table. It doesn't serve files, but this shouldn't be that hard to implement. The only thing to
-                ask would be – why?</p>
-        </div>
-
-        <div id="!/My_projects/Python/Engineering_thesis.html" class="box-content">
-            <p>I wrote an implementaion for my engineering thesis in Python. In the thesis I apply a reinforcement
-                learning algorithm to Connect 4 game and compare various values of algorithm's meta parameters.</p>
-
-            <div class="call-to-action">Check out <a class="highlighted"
-                    href="https://github.com/hckr/engineering-thesis">the repository</a>.</div>
-
-            <p>TL;DR I didn't manage to train an agent which could beat a sensible human, but at least it beats a random
-                player ;)</p>
-        </div>
-
-        <div id="!/My_projects/Python/Signal_processing.html" class="box-content">
-            <p>Library and scripts created to generate PDF reports for signal processing classes.</p>
-
-            <div class="call-to-action">Check out <a class="highlighted" href="https://github.com/hckr/sig_proc">the
-                    whole repository</a> or start with one of generated reports (in Polish, but graphs are international
-                ;) – <a class="highlighted" href=" https://hckr.pl/sig_proc/pdf/lab3.pdf">AM, FM, PM</a>.</div>
-        </div>
-
-        <div id="!/My_projects/Python/Fuzzer.html" class="box-content">
-            <p>GUI script (in Polish) which uses wxPython and matplotlib to draw a fuzzy logic function graph. I used it
-                for fuzzy logic classes.</p>
-
-            <div class="call-to-action">Check out <a class="highlighted" href="https://github.com/hckr/fuzzer">the
-                    code</a>.</div>
-        </div>
-
-        <div id="!/My_projects/Other/Padding_Oracle_Attack.html" class="box-content">
-            <p>A demonstration of a padding oracle attack against <span title="Advanced Encryption Standard">AES</span>
-                <span title="Cipher Block Chaining">CBC</span> (with PKCS7 or ANSI X.923
-                padding scheme) implemented using C# and .NET Core. Also includes a report with Q&A requred as a lab
-                assignment.</p>
-
-            <div class="call-to-action">Check out <a class="highlighted"
-                    href="https://github.com/hckr/padding-oracle-attack">the implementation</a> and don't forget to
-                look
-                at
-                <a class="highlighted" href="https://github.com/hckr/padding-oracle-attack/blob/master/README.md">the
-                    report</a> which
-                briefly explains the code and how the attack works.
-            </div>
-        </div>
-
-        <div id="!/My_projects/Other/Arduino.html" class="box-content">
-            <p>Small projects using a well-known prototyping board.</p>
-
-            <div class="call-to-action">Watch video: <a class="highlighted"
-                    href="https://www.youtube.com/watch?v=HHSWmnwBB5o">snake clone on Arduino</a> or
-                check out <a class="highlighted"
-                    href="https://github.com/hckr/arduino/tree/master/nokia_snake_clone">the code and wiring</a>.
-            </div>
-
-            <div class="call-to-action">Watch video: <a class="highlighted"
-                    href="https://www.youtube.com/watch?v=EIdJh8P_pZc">distance and temperature sensors on
-                    Arduino</a> or
-                check out <a class="highlighted"
-                    href="https://github.com/hckr/arduino/tree/master/distance_temperature_lcd">the code</a>.
-            </div>
-        </div>
-
-        <div id="!/My_projects/Other/Declarative_Pong.html" class="box-content">
-            <p>A simple pong game written in QML.</p>
-
-            <p>As QML is a declarative language, I imagined my implementation to also be declarative. That's why
-                there
-                is a <code>Game</code> component which should have two <code>Paddle</code>s and a <code>Ball</code>
-                inside. Each <code>Paddle</code> should have either <code>ManualControls</code> or
-                <code>ComputerControls</code>. I'm not sure wheather it worked out, but I've surely learned a bit
-                more about QML.</p>
-
-            <div class="call-to-action">Check out <a class="highlighted"
-                    href="https://github.com/hckr/cute-apps/tree/master/Pong">the code.</a>
-            </div>
-
-            <p>By default the game starts in <code>'vertical'</code> <code>orientation</code>. You can change it to
-                <code>'horizontal'</code> in <code>Game</code> properties. For controls please see which are set in
-                <code>Paddle</code>s – you can replace manual with computer and vice versa, change the keys etc.</p>
-        </div>
-
-        <!-- TODO: these below could probably be implemented somehow better -->
-
-        <div id="!/My_projects" class="box-content">
-            Press ENTER to explore directory <em>My projects</em>.
-        </div>
-
-        <div id="!/My_projects/Web_technologies" class="box-content">
-            Press ENTER to explore directory <em>Web technologies</em>.
-        </div>
-
-        <div id="!/My_projects/C++" class="box-content">
-            Press ENTER to explore directory <em>C++</em>.
-        </div>
-
-        <div id="!/My_projects/Python" class="box-content">
-            Press ENTER to explore directory <em>Python</em>.
-        </div>
-
-        <div id="!/My_projects/Other" class="box-content">
-            Press ENTER to explore directory <em>Other</em>.
-        </div>
-
-        <div id=".." class="box-content">
-            Press ENTER to go up.
-        </div>
-    </div>
-
-    <div class="interface">
-        <div class="box box-navigation box-title-outer-backlay">
-            <h3 class="box-title-outer title-value">
-                <!-- -->
-            </h3>
-            <div class="box-overflow-container box-overflow-container-outer-title-padding">
-                <ul class="box-list"></ul>
-            </div>
-        </div>
-        <div class="box box-preview">
-            <div class="box-overflow-container">
-                <h3 class="box-title-inner">
-                    <span class="title-value">
-                        <!-- -->
-                    </span>
-                    <span class="scroll-percent">
-                        <span class="scroll-percent-value">
-                            <!-- -->
-                        </span>%
-                    </span>
-                </h3>
-                <!-- <div class="box-content"></div> -->
-            </div>
-        </div>
-    </div>
-    <script>
-        if (navigator.cookieEnabled !== false && !document.cookie.split(';').map(c => c.trim()).includes('cookieAlertDismissed=1')) {
-            document.body.insertAdjacentHTML('beforeend', `
-                <div style="position: sticky; bottom: 0; left: 0; right: 0; z-index: 1000; padding: 5px 10px; background: #25262b; color: #ccc; text-align: left; font-size: 16px;">
-                    This website uses cookies for statistical purposes (and transmits data to Google Analytics).
-                    You can block the relevant cookies in your browser settings.
-                    <span
-                        style="padding: 3px; cursor:pointer; text-decoration: underline; border: none;"
-                        title="Accept and close this message"
-                        onclick="document.cookie='cookieAlertDismissed=1; expires=Tue, 19 Jan 2038;path=/';this.parentNode.parentNode.removeChild(this.parentNode);"
-                    >
-                        close ✖
-                    </span>
-                </div>
-            `);
-        }
-
-        function trackClick(e) {
-            if (window.google_tag_manager) {
-                const url = this.href;
-                gtag('event', 'click', {
-                    'event_category': 'outbound',
-                    'event_label': url,
-                    'transport_type': 'beacon',
-                    'event_callback': () => { document.location = url; }
-                });
-                e.preventDefault();
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jakub Młokosiewicz – hckr.pl</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&amp;family=Major+Mono+Display&amp;display=swap" />
+        <link rel="stylesheet" href="style.css" />
+        <meta property="og:url" content="https://hckr.pl" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Jakub Młokosiewicz – hckr.pl" />
+        <meta
+            property="og:description"
+            content="Hi! Welcome to my home page. I wanted to make it stand out a bit and finally got inspired by text mode interfaces, mainly Midnight Commander, a Linux console file manager."
+        />
+        <meta property="og:image" content="https://hckr.pl/og_image.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162891460-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
             }
-        }
+            gtag('js', new Date());
+            gtag('config', 'UA-162891460-1', {send_page_view: false});
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>
+                <a href="/">
+                    Jakub Młokosiewicz <span class="url">// hckr.pl</span>
+                    <div class="motto">I like to tinker with software</div>
+                </a>
+            </h1>
 
-        document.querySelectorAll('a.track').forEach(a => a.addEventListener('click', trackClick, false));
-    </script>
-    <script src="main.js"></script>
-</body>
+            <ul class="menu">
+                <li><a href="#!/My_projects/">Browse my projects</a></li>
+                <li><a class="track" href="Jakub_Młokosiewcz_CV_en.pdf">My CV</a></li>
+                <li><a href="#!/About_me.html">About me</a></li>
+                <li><a class="track" href="https://github.com/hckr">My GitHub profile</a></li>
+            </ul>
+        </header>
+
+        <script>
+            const routingTree = [
+                ['Welcome.html'],
+                ['About me.html'],
+                [
+                    'My projects',
+                    [
+                        ['README.html'],
+                        [
+                            'Web technologies',
+                            [
+                                ['Throw an Arrow.html'],
+                                ['Logic-algebraic yachting.html'],
+                                ['Employee management.html'],
+                                ['Facebook Post Screenshot.html'],
+                                ['Endless Horse Run.html'],
+                                ['K-means visualization.html'],
+                                ['GitHub News Filter.html'],
+                                ['HTML5 video matrix code effect.html'],
+                                ['Web GUI.html'],
+                            ],
+                        ],
+                        ['C++', [['Space Logic Adventure.html'], ['ThreadPool.html'], ['tbb_mandelbrot.html'], ['SimpleHTTP.html']]],
+                        ['Python', [['Engineering thesis.html'], ['Signal processing.html'], ['Fuzzer.html']]],
+                        ['Other', [['Padding Oracle Attack.html'], ['Arduino.html'], ['Declarative Pong.html']]],
+                    ],
+                ],
+            ];
+        </script>
+
+        <div id="contents">
+            <div id="!/Welcome.html" class="box-content">
+                <p>Hi! Welcome to my home page.</p>
+                <p>
+                    I wanted to make it stand out a bit and finally got inspired by text mode interfaces, mainly Midnight Commander, a Linux console
+                    file manager. Let's say it's a very loose adaptation :)
+                </p>
+                <p>
+                    Use up and down arrows to move between files in a virtual directory tree.<br />
+                    Press enter to switch to a directory.
+                </p>
+                <p>A slightly less fun option is also possible – you can just click (or tap) the options.</p>
+                <p>Previous version of this page <a href="old/index.html">can be found here</a>.</p>
+            </div>
+
+            <div id="!/About_me.html" class="box-content">
+                <p>
+                    I like to code and honestly don't understand
+                    <span title="there are people who are interested in public transportation :o">why someone would like trains</span>
+                    or <span title="I mean tracking scores, who playes where, etc., not training">sports</span>.<br />
+                    To each their own, I guess.
+                </p>
+                <p>
+                    I discovered programming near the end of the primary school. I was playing with Excel and in the process of trying all the
+                    interesting, and also less interesting, options. I found an editor for creating windows in which I could place different controls
+                    (like buttons, text fields and so on). Even though, as far as I recall, I didn't manage to add any logic then, the sheer pleasure
+                    of having my own designed window showing after pressing a "play" key on the Excel toolbar was enough to get me interested. Soon I
+                    discovered it's called
+                    <span title="Visual Basic for Applications">VBA</span>. Soon after I found a book about Visual Basic .NET (slightly different
+                    thing) during shopping and asked my parents to buy it for me. When I got access to the internet, I stumbled upon
+                    <a href="http://coderscity.net">CodersCity.net</a> (in Polish) and, after some time,
+                    <a href="https://forumweb.pl">Forumweb.pl</a>, where I received much guidance.
+                </p>
+                <p>
+                    Long history short, I started programming in Visual Basic, then I also got interested in web development. Starting with very
+                    simple layuts in HTML and CSS, and poorly chosen colors, I got better over time and also learned PHP which enabled me to create
+                    websites with login and interaction with a database (MySQL in my case). JavaScript followed nicely as a way to do things in
+                    browser without necessarily reloading the page. On university I got a chance to finally learn how to properly manage memory in C++
+                    which previously discouraged me from using it (I also got familiar with Linux which I happily use to this day), not mentioning
+                    less appealing look of a console application, compared to a web page which could be easily styled with CSS (is it why we have
+                    full-blown editors written in web technolgies and Electron? :D). All jokes aside, I know there are
+                    <span title="Graphical User Interface">GUI</span> libraries for C++. Some even embed JavaScript engine inside (Qt's QML)! I also
+                    have some experience with Python which I've used for example for convenience, web development or some kind of data science. And
+                    these, of course, aren't all programming languages I've ever used.
+                </p>
+                <p>
+                    What I mean, at some point a specific language becomes just a tool for a job and a good coder should be able to easily transition
+                    between different languages and frameworks, and choose them well. I strive to be such a programmer each day :)
+                </p>
+                <p>
+                    I hope I didn't bore you. Please, check out my projects and don't hesitate to improve something if you've got an idea (issues and
+                    pull requests are very welcome)!
+                </p>
+                <p>If you'd like to contact me, my e-mail is available in the CV.</p>
+            </div>
+
+            <div id="!/My_projects/README.html" class="box-content">
+                <p>I've ordered my personal projects by category. Please, select a specific directory.</p>
+
+                <p>
+                    In <em>Web technolgies</em>, you'll find two games (in JavaScript), a <span title="Create, Read, Update, Delete">CRUD</span> (in
+                    PHP), a decision support system with a simple embedded language (in JavaScript), two utilities: for Facebook and for Github (web
+                    extension and userscript), and more.
+                </p>
+
+                <p>In <em>C++</em>, there is a game, a thread pool library, and more.</p>
+
+                <p>
+                    In <em>Python</em>, you can find my engineering thesis with an implementation of Connect 4 (a game) and an application of
+                    reinforcement learning, a tool for report generation for signal processing classes, and more.
+                </p>
+
+                <p>
+                    In <em>Other</em>, you'll find my implementation of snake for Arduino, demonstration of a padding oracle attack against
+                    <span title="Advanced Encryption Standard">AES</span> <span title="Cipher Block Chaining">CBC</span>, a somewhat declarative
+                    approach to Pong, and more.
+                </p>
+            </div>
+
+            <div id="!/My_projects/Web_technologies/Throw_an_Arrow.html" class="box-content">
+                <p>
+                    Throw an Arrow is a game made for
+                    <a href="https://gynvael.coldwind.pl/?id=686">Gynvael's Summer GameDev Challenge 2018</a>.
+                </p>
+
+                <div class="call-to-action">
+                    <a class="highlighted" href="https://hckr.pl/throw-an-arrow">Play online</a> or take a look at
+                    <a class="highlighted" href="https://github.com/hckr/throw-an-arrow">the code</a>.
+                </div>
+
+                <p>
+                    There were some weird constraints like the content should be rendered into a 360x400
+                    <code>&lt;canvas&gt;</code> which is then stretched to fill the full screen or there could be at most 32 colors displayed used at
+                    the same time. On top of that, the whole game had to have the size of at most 31337 bytes.
+                </p>
+            </div>
+
+            <div id="!/My_projects/Web_technologies/Logic-algebraic_yachting.html" class="box-content">
+                <p>
+                    The application is based on the logical-algebraic method discussed during Decision Support Systems classes on Wroclaw University
+                    of Science and Technology. The program infers, based on previously defined variables and logical facts, what the effects of the
+                    decisions given by the user will be (analysis task) or what decisions should be made to achieve the desired effects (decision
+                    support task). The loaded database relates to yacht control. I was responsible for the implementation, a friend of mine developed
+                    the logical rules.
+                </p>
+
+                <div class="call-to-action">
+                    <a class="highlighted" href="https://hckr.pl/logic-algebraic-yachting/en.html">Try it online</a> or check out
+                    <a class="highlighted" href="https://github.com/hckr/logic-algebraic-yachting">the implementation</a>.
+                </div>
+
+                <p>
+                    The application supports writing
+                    <a class="highlighted" href="https://github.com/hckr/logic-algebraic-yachting/blob/master/yachting_en.lamd"
+                        >rules in a human-friendly format</a
+                    >, which is converted to internal representation (<a
+                        class="highlighted"
+                        href="https://github.com/hckr/logic-algebraic-yachting/blob/master/parsing.js"
+                        >parsed</a
+                    >, <a class="highlighted" href="https://github.com/hckr/logic-algebraic-yachting/blob/master/interpreting.js">interpreted</a>) and
+                    checked for errors
+                    <a href="https://github.com/hckr/logic-algebraic-yachting/blob/master/main.js#L10">during the app initialization</a>.
+                </p>
+
+                <p>
+                    Input and output facts can be easily constructed in the application
+                    <span title="Graphical User Interface">GUI</span>. First, a template logical expression should be written with <code>?</code> in
+                    places where there should be variables. Then, after pressing Enter or pressing a button, this expression will be checked for
+                    correctness and <code>?</code> will be replaced with lists with meaningful variable names. After the selection is made, results
+                    are shown below in a form of a table and logical expressions.
+                </p>
+            </div>
+
+            <div id="!/My_projects/Web_technologies/Employee_management.html" class="box-content">
+                <p>A CRUD application for employee data management with different access levels (in Polish).</p>
+
+                <div class="call-to-action">
+                    <a class="highlighted" href="http://si.luke.co.pl">Test it out online (in Polish)</a> or check out
+                    <a class="highlighted" href="https://github.com/hckr/si_lab">the code</a>.
+                </div>
+
+                <p>
+                    When we were assigned to write a CRUD for employee management in PHP, I used this oppurtunity to do it in a "more proper way" than
+                    it was presented during classes, which I then skipped, handing out the task early.
+                </p>
+
+                <p>
+                    I programmed it in a <span title="Model View Controller">MVC</span> fashion. Even though it's plain PHP, it features
+                    <a class="highlighted" href="https://github.com/hckr/si_lab/blob/master/classes/Router.php">routing</a>,
+                    <a class="highlighted" href="https://github.com/hckr/si_lab/tree/master/classes/controllers">controllers</a>,
+                    <a class="highlighted" href="https://github.com/hckr/si_lab/tree/master/classes/models">models</a>, and of course, a simple
+                    mechanism for
+                    <a class="highlighted" href="https://github.com/hckr/si_lab/blob/master/classes/View.php">views</a>
+                    which allows for creation of
+                    <a class="highlighted" href="https://github.com/hckr/si_lab/blob/master/templates/partials/user_form.php">readable templates</a>.
+                    There is also a
+                    <a class="highlighted" href="https://github.com/hckr/si_lab/blob/master/classes/Validator.php">Validator class</a>
+                    which is easily extendable with new rules and
+                    <a class="highlighted" href="https://github.com/hckr/si_lab/blob/master/classes/models/User.php#L19">easy to use in models</a>.
+                </p>
+            </div>
+
+            <div id="!/My_projects/Web_technologies/Facebook_Post_Screenshot.html" class="box-content">
+                <p>Firefox Web Extension to save Facebook posts as images.</p>
+
+                <div class="call-to-action">
+                    See the <a class="highlighted" href="https://hckr.pl/fb-post-screenshot/">landing page</a>, entry on
+                    <a class="highlighted" href="https://addons.mozilla.org/en-US/firefox/addon/facebook-post-screenshot/">Firefox Add-ons website</a>
+                    or take a look at
+                    <a class="highlighted" href="https://github.com/hckr/fb-post-screenshot">the code</a>.
+                </div>
+
+                <p>
+                    Web Extension saves Facebook posts as images ("takes screenshot"). Add-on adds new option in each post's menu to save it's
+                    screenshot (with all replies expanded). Screenshot can be also anonymized (profile pictures blurred, names replaced with
+                    identifiers like "OP", "Profile 1", "Profile 2" and so on). Large posts are split into multiple images each at most 8192 px tall
+                    (this can be changed up to 16000 px).
+                </p>
+
+                <p>
+                    Facebook changes the interface from time to time which causes the add-on to stop working partially or even in full.
+                </p>
+            </div>
+
+            <div id="!/My_projects/Web_technologies/Endless_Horse_Run.html" class="box-content">
+                <p>
+                    In this simple game you control a horse which has to jump to avoid the evil skeletons. The forst is getting more dense with time
+                    which makes it harder to see when the enemy is approaching.
+                </p>
+
+                <div class="call-to-action">
+                    <a class="highlighted" href="https://hckr.pl/endless-horse-run/">Play in the browser</a>,
+                    <a class="highlighted" href="https://play.google.com/store/apps/details?id=pl.hckr.endlesshorserun">download for Android</a>
+                    or take a look at
+                    <a class="highlighted" href="https://github.com/hckr/endless-horse-run">the code</a>.
+                </div>
+
+                <p>Game was written in JavaScript and that made it possible to port it to Android with Cordova.</p>
+            </div>
+
+            <div id="!/My_projects/Web_technologies/K-means_visualization.html" class="box-content">
+                <p>Two-dimensional visualization of k-means clustering algorithm in the browser.</p>
+
+                <div class="call-to-action">
+                    <a class="highlighted" href="https://hckr.pl/k-means-visualization">Try it in the browser</a> or take a look at
+                    <a class="highlighted" href="https://github.com/hckr/k-means-visualization">the code</a>.
+                </div>
+
+                <p>
+                    You can add data points manually or at random and, similarly, centroids. The steps of the algorithm can be executed automatically
+                    or step by step with a click on the button.
+                </p>
+            </div>
+
+            <div id="!/My_projects/Web_technologies/GitHub_News_Filter.html" class="box-content">
+                <p>A Userscript to filter GitHub news feed using case-insensitive regular expression.</p>
+
+                <div class="call-to-action">
+                    See
+                    <a class="highlighted" href="https://hckr.pl/github-news-filter/">installation instructions</a> or check out
+                    <a class="highlighted" href="https://github.com/hckr/github-news-filter">the code</a>.
+                </div>
+
+                <p>
+                    The idea for this script came out from a simple need to have a way to quicky search through the GitHub front page "activity".
+                </p>
+            </div>
+
+            <div id="!/My_projects/Web_technologies/HTML5_video_matrix_code_effect.html" class="box-content">
+                <p>An attempt to create a matrix-like effect on a video (or a stream from a webcam).</p>
+
+                <div class="call-to-action">
+                    <a class="highlighted" href="https://hckr.pl/html5-video-matrix-code-effect/">Try it out</a> or check out
+                    <a class="highlighted" href="https://github.com/hckr/html5-video-matrix-code-effect">the code</a>.
+                </div>
+            </div>
+
+            <div id="!/My_projects/Web_technologies/Web_GUI.html" class="box-content">
+                <p>A very old project of mine. An attempt to create a web interface mimicking a desktop.</p>
+
+                <div class="call-to-action">
+                    <a class="highlighted" href="http://gui-demo.luke.co.pl/">See it online</a> or check out
+                    <a class="highlighted" href="https://github.com/hckr/web-gui">the code. </a>
+                </div>
+            </div>
+
+            <div id="!/My_projects/C++/Space_Logic_Adventure.html" class="box-content">
+                <p>
+                    Space Logic Adventure is an arcade game I made for
+                    <a href="https://gynvael.coldwind.pl/?id=657">Gynvael's Summer GameDev Challenge 2017</a>. I managed to
+                    <a href="http://gynvael.coldwind.pl/?id=663">win the first place</a> :)
+                </p>
+
+                <div class="call-to-action">
+                    <a class="highlighted" href="https://hckr.pl/space-logic-adventure/">Download and play</a> or take a look at
+                    <a class="highlighted" href="https://github.com/hckr/space-logic-adventure">the code</a>.
+                </div>
+
+                <p>
+                    The task was to make a game using only the provided assets with a couple of exceptions. I'm not much interested in games, hence I
+                    don't know what genre it is that I created. But it's definetety somewhat arcade and somewhat a puzzle. The goal of each level is
+                    to reach a field with the spaceship. Fields disappear one second after standing on them which means you must move fast.
+                </p>
+
+                <p>
+                    The game has multiple levels which means I had to design them somehow. I created a
+                    <a class="highlighted" href="https://github.com/hckr/space-logic-adventure/tree/master/dist/assets/levels"
+                        >text format for level files</a
+                    >. Assets were supplied as separate files, so I created
+                    <a class="highlighted" href="https://github.com/hckr/space-logic-adventure/blob/master/tools/tileset_gen.py"
+                        >a very simple texture packer</a
+                    >. At some places the code could've been written better and some functionality not required by current levels isn't finished (I
+                    was coding it <span style="letter-spacing: 0.3em;">fast</span>). Maybe I'll revisit and improve the game in the future.
+                </p>
+            </div>
+
+            <div id="!/My_projects/C++/ThreadPool.html" class="box-content">
+                <p>A thread pool implementation in C++11.</p>
+
+                <div class="call-to-action">
+                    Take a look at
+                    <a class="highlighted" href="https://github.com/hckr/threadpool">the code and example usage</a>.
+                </div>
+
+                <p>
+                    Library makes it easy to schedule tasks (which can be anything assignable to
+                    <code>std::function</code>) to be executed in one of threads in a pool and then possibly receive a result if there is any (as a
+                    thread pool should do per definition). I think it's an interesting peace of code to learn about the concurrency features added in
+                    C++11. My implementation makes use of <code>std::unique_lock</code>, <code>std::mutex</code> and
+                    <code>std::condition_variable</code> for synchronization, and <code>std::packaged_task</code> which wraps a callable (and is
+                    ultimately called by one of the threads) and makes available a <code>std::future</code> which is returned to the user and provides
+                    access to the task result when it's ready.
+                </p>
+            </div>
+
+            <div id="!/My_projects/C++/tbb_mandelbrot.html" class="box-content">
+                <p>
+                    Generating and visualizing Mandelbrot set/fractal using
+                    <span title="Threading Building Blocks">TBB</span> and png++.
+                </p>
+
+                <div class="call-to-action">
+                    Take a look at
+                    <a class="highlighted" href="https://github.com/hckr/tbb_mandelbrot">the code and images</a>.
+                </div>
+
+                <p>
+                    Project explores <code>tdd::flow::graph</code> features in the implementation of a somewhat artifically created need to draw
+                    Mandelbrot fractals concurrently and then merge them into the third image. If you look for inspiration how to implement something
+                    with TBB, feel free to grab some code and maybe also contribute! I of course can't guarantee that the code is safe and
+                    well-written, it was my first time with TBB. But look at the images – something as easy as pixel offset during merge of two images
+                    can make an interesting effect!
+                </p>
+            </div>
+
+            <div id="!/My_projects/C++/SimpleHTTP.html" class="box-content">
+                <p>A simple HTTP server written using C++ and Winsock.</p>
+
+                <div class="call-to-action">Check out <a class="highlighted" href="https://github.com/hckr/SimpleHTTP">the code</a>.</div>
+
+                <p>
+                    It technically is a HTTP server, but all it does is receive a request, parse headers and return them in an HTML table. It doesn't
+                    serve files, but this shouldn't be that hard to implement. The only thing to ask would be – why?
+                </p>
+            </div>
+
+            <div id="!/My_projects/Python/Engineering_thesis.html" class="box-content">
+                <p>
+                    I wrote an implementaion for my engineering thesis in Python. In the thesis I apply a reinforcement learning algorithm to Connect
+                    4 game and compare various values of algorithm's meta parameters.
+                </p>
+
+                <div class="call-to-action">
+                    Check out
+                    <a class="highlighted" href="https://github.com/hckr/engineering-thesis">the repository</a>.
+                </div>
+
+                <p>
+                    TL;DR I didn't manage to train an agent which could beat a sensible human, but at least it beats a random player ;)
+                </p>
+            </div>
+
+            <div id="!/My_projects/Python/Signal_processing.html" class="box-content">
+                <p>Library and scripts created to generate PDF reports for signal processing classes.</p>
+
+                <div class="call-to-action">
+                    Check out <a class="highlighted" href="https://github.com/hckr/sig_proc">the whole repository</a> or start with one of generated
+                    reports (in Polish, but graphs are international ;) –
+                    <a class="highlighted" href=" https://hckr.pl/sig_proc/pdf/lab3.pdf">AM, FM, PM</a>.
+                </div>
+            </div>
+
+            <div id="!/My_projects/Python/Fuzzer.html" class="box-content">
+                <p>
+                    GUI script (in Polish) which uses wxPython and matplotlib to draw a fuzzy logic function graph. I used it for fuzzy logic classes.
+                </p>
+
+                <div class="call-to-action">Check out <a class="highlighted" href="https://github.com/hckr/fuzzer">the code</a>.</div>
+            </div>
+
+            <div id="!/My_projects/Other/Padding_Oracle_Attack.html" class="box-content">
+                <p>
+                    A demonstration of a padding oracle attack against
+                    <span title="Advanced Encryption Standard">AES</span>
+                    <span title="Cipher Block Chaining">CBC</span> (with PKCS7 or ANSI X.923 padding scheme) implemented using C# and .NET Core. Also
+                    includes a report with Q&A requred as a lab assignment.
+                </p>
+
+                <div class="call-to-action">
+                    Check out
+                    <a class="highlighted" href="https://github.com/hckr/padding-oracle-attack">the implementation</a>
+                    and don't forget to look at
+                    <a class="highlighted" href="https://github.com/hckr/padding-oracle-attack/blob/master/README.md">the report</a>
+                    which briefly explains the code and how the attack works.
+                </div>
+            </div>
+
+            <div id="!/My_projects/Other/Arduino.html" class="box-content">
+                <p>Small projects using a well-known prototyping board.</p>
+
+                <div class="call-to-action">
+                    Watch video:
+                    <a class="highlighted" href="https://www.youtube.com/watch?v=HHSWmnwBB5o">snake clone on Arduino</a>
+                    or check out
+                    <a class="highlighted" href="https://github.com/hckr/arduino/tree/master/nokia_snake_clone">the code and wiring</a>.
+                </div>
+
+                <div class="call-to-action">
+                    Watch video:
+                    <a class="highlighted" href="https://www.youtube.com/watch?v=EIdJh8P_pZc">distance and temperature sensors on Arduino</a>
+                    or check out
+                    <a class="highlighted" href="https://github.com/hckr/arduino/tree/master/distance_temperature_lcd">the code</a>.
+                </div>
+            </div>
+
+            <div id="!/My_projects/Other/Declarative_Pong.html" class="box-content">
+                <p>A simple pong game written in QML.</p>
+
+                <p>
+                    As QML is a declarative language, I imagined my implementation to also be declarative. That's why there is a
+                    <code>Game</code> component which should have two <code>Paddle</code>s and a <code>Ball</code> inside. Each
+                    <code>Paddle</code> should have either <code>ManualControls</code> or <code>ComputerControls</code>. I'm not sure wheather it
+                    worked out, but I've surely learned a bit more about QML.
+                </p>
+
+                <div class="call-to-action">
+                    Check out
+                    <a class="highlighted" href="https://github.com/hckr/cute-apps/tree/master/Pong">the code.</a>
+                </div>
+
+                <p>
+                    By default the game starts in <code>'vertical'</code> <code>orientation</code>. You can change it to <code>'horizontal'</code> in
+                    <code>Game</code> properties. For controls please see which are set in <code>Paddle</code>s – you can replace manual with computer
+                    and vice versa, change the keys etc.
+                </p>
+            </div>
+
+            <!-- TODO: these below could probably be implemented somehow better -->
+
+            <div id="!/My_projects" class="box-content">Press ENTER to explore directory <em>My projects</em>.</div>
+
+            <div id="!/My_projects/Web_technologies" class="box-content">Press ENTER to explore directory <em>Web technologies</em>.</div>
+
+            <div id="!/My_projects/C++" class="box-content">Press ENTER to explore directory <em>C++</em>.</div>
+
+            <div id="!/My_projects/Python" class="box-content">Press ENTER to explore directory <em>Python</em>.</div>
+
+            <div id="!/My_projects/Other" class="box-content">Press ENTER to explore directory <em>Other</em>.</div>
+
+            <div id=".." class="box-content">
+                Press ENTER to go up.
+            </div>
+        </div>
+
+        <div class="interface">
+            <div class="box box-navigation box-title-outer-backlay">
+                <h3 class="box-title-outer title-value">
+                    <!-- -->
+                </h3>
+                <div class="box-overflow-container box-overflow-container-outer-title-padding">
+                    <ul class="box-list"></ul>
+                </div>
+            </div>
+            <div class="box box-preview">
+                <div class="box-overflow-container">
+                    <h3 class="box-title-inner">
+                        <span class="title-value">
+                            <!-- -->
+                        </span>
+                        <span class="scroll-percent">
+                            <span class="scroll-percent-value"> <!-- --> </span>%
+                        </span>
+                    </h3>
+                    <!-- <div class="box-content"></div> -->
+                </div>
+            </div>
+        </div>
+        <script>
+            if (
+                navigator.cookieEnabled !== false &&
+                !document.cookie
+                    .split(';')
+                    .map(c => c.trim())
+                    .includes('cookieAlertDismissed=1')
+            ) {
+                document.body.insertAdjacentHTML(
+                    'beforeend',
+                    `
+                    <div style="position: sticky; bottom: 0; left: 0; right: 0; z-index: 1000; padding: 5px 10px; background: #25262b; color: #ccc; text-align: left; font-size: 16px;">
+                        This website uses cookies for statistical purposes (Google Analytics, <a style="text-decoration: underline" href="https://www.google.com/policies/privacy/partners/">privacy policy</a>).
+                        You can block the relevant cookies in your browser settings.
+                        <span
+                            style="padding: 3px; cursor:pointer; text-decoration: underline; border: none;"
+                            title="Accept and close this message"
+                            onclick="document.cookie='cookieAlertDismissed=1; expires=Tue, 19 Jan 2038;path=/';this.parentNode.parentNode.removeChild(this.parentNode);"
+                        >
+                            close ✖
+                        </span>
+                    </div>`
+                );
+            }
+
+            function trackClick(e) {
+                if (window.google_tag_manager) {
+                    const url = this.href;
+                    gtag('event', 'click', {
+                        event_category: 'outbound',
+                        event_label: url,
+                        transport_type: 'beacon',
+                        event_callback: () => {
+                            document.location = url;
+                        },
+                    });
+                    e.preventDefault();
+                }
+            }
+
+            document.querySelectorAll('a.track').forEach(a => a.addEventListener('click', trackClick, false));
+        </script>
+        <script src="main.js"></script>
+    </body>
 </html>
