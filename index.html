@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -16,16 +16,6 @@
         <meta property="og:image" content="https://hckr.pl/og_image.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162891460-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
-            gtag('config', 'UA-162891460-1', {send_page_view: false});
-        </script>
     </head>
     <body>
         <header>
@@ -38,9 +28,9 @@
 
             <ul class="menu">
                 <li><a href="#!/My_projects/">Browse my projects</a></li>
-                <li><a class="track" href="Jakub_Młokosiewcz_CV_en.pdf">My CV</a></li>
+                <li><a href="Jakub_Młokosiewcz_CV_en.pdf">My CV</a></li>
                 <li><a href="#!/About_me.html">About me</a></li>
-                <li><a class="track" href="https://github.com/hckr">My GitHub profile</a></li>
+                <li><a href="https://github.com/hckr">My GitHub profile</a></li>
             </ul>
         </header>
 
@@ -253,9 +243,7 @@
                     (this can be changed up to 16000 px).
                 </p>
 
-                <p>
-                    Facebook changes the interface from time to time which causes the add-on to stop working partially or even in full.
-                </p>
+                <p>Facebook changes the interface from time to time which causes the add-on to stop working partially or even in full.</p>
             </div>
 
             <div id="!/My_projects/Web_technologies/Endless_Horse_Run.html" class="box-content">
@@ -297,9 +285,7 @@
                     <a class="highlighted" href="https://github.com/hckr/github-news-filter">the code</a>.
                 </div>
 
-                <p>
-                    The idea for this script came out from a simple need to have a way to quicky search through the GitHub front page "activity".
-                </p>
+                <p>The idea for this script came out from a simple need to have a way to quicky search through the GitHub front page "activity".</p>
             </div>
 
             <div id="!/My_projects/Web_technologies/HTML5_video_matrix_code_effect.html" class="box-content">
@@ -346,7 +332,7 @@
                     <a class="highlighted" href="https://github.com/hckr/space-logic-adventure/blob/master/tools/tileset_gen.py"
                         >a very simple texture packer</a
                     >. At some places the code could've been written better and some functionality not required by current levels isn't finished (I
-                    was coding it <span style="letter-spacing: 0.3em;">fast</span>). Maybe I'll revisit and improve the game in the future.
+                    was coding it <span style="letter-spacing: 0.3em">fast</span>). Maybe I'll revisit and improve the game in the future.
                 </p>
             </div>
 
@@ -411,9 +397,7 @@
                     <a class="highlighted" href="https://github.com/hckr/engineering-thesis">the repository</a>.
                 </div>
 
-                <p>
-                    TL;DR I didn't manage to train an agent which could beat a sensible human, but at least it beats a random player ;)
-                </p>
+                <p>TL;DR I didn't manage to train an agent which could beat a sensible human, but at least it beats a random player ;)</p>
             </div>
 
             <div id="!/My_projects/Python/Signal_processing.html" class="box-content">
@@ -503,9 +487,7 @@
 
             <div id="!/My_projects/Other" class="box-content">Press ENTER to explore directory <em>Other</em>.</div>
 
-            <div id=".." class="box-content">
-                Press ENTER to go up.
-            </div>
+            <div id=".." class="box-content">Press ENTER to go up.</div>
         </div>
 
         <div class="interface">
@@ -531,48 +513,6 @@
                 </div>
             </div>
         </div>
-        <script>
-            if (
-                navigator.cookieEnabled !== false &&
-                !document.cookie
-                    .split(';')
-                    .map(c => c.trim())
-                    .includes('cookieAlertDismissed=1')
-            ) {
-                document.body.insertAdjacentHTML(
-                    'beforeend',
-                    `
-                    <div style="position: sticky; bottom: 0; left: 0; right: 0; z-index: 1000; padding: 5px 10px; background: #25262b; color: #ccc; text-align: left; font-size: 16px;">
-                        This website uses cookies for statistical purposes (Google Analytics, <a style="text-decoration: underline" href="https://www.google.com/policies/privacy/partners/">privacy policy</a>).
-                        You can block the relevant cookies in your browser settings.
-                        <span
-                            style="padding: 3px; cursor:pointer; text-decoration: underline; border: none;"
-                            title="Accept and close this message"
-                            onclick="document.cookie='cookieAlertDismissed=1; expires=Tue, 19 Jan 2038;path=/';this.parentNode.parentNode.removeChild(this.parentNode);"
-                        >
-                            close ✖
-                        </span>
-                    </div>`
-                );
-            }
-
-            function trackClick(e) {
-                if (window.google_tag_manager) {
-                    const url = this.href;
-                    gtag('event', 'click', {
-                        event_category: 'outbound',
-                        event_label: url,
-                        transport_type: 'beacon',
-                        event_callback: () => {
-                            document.location = url;
-                        },
-                    });
-                    e.preventDefault();
-                }
-            }
-
-            document.querySelectorAll('a.track').forEach(a => a.addEventListener('click', trackClick, false));
-        </script>
         <script src="main.js"></script>
     </body>
 </html>
